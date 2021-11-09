@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Simultaneous Equations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='checkBtn.js') }}"></script>
+    <script>
+        //Load quiz answers
+        var quizDict = {};
+
+        function loadAnswers(lst) { //lst = quiz list declared from routes.py
+            for (i = 0; i < lst.length; i++) {
+                quizDict[lst[i].Question] = lst[i].Answer
+            }
+        }
+
+        $(document).ready(function() {
+            //Quiz page 1
+            $("#Q1_submit").click(function(e) {
+                //simultaneous1_1
+                var userAnswer1 = $("#simultaneous1_1").val()
+                var actualAnswer1 = quizDict.simultaneous1_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_1_1").show();
+                    $("#fail_1_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_1_1").show();
+                    $("#success_1_1").hide();
+                }
+                //simultaneous1_2
+                var userAnswer2 = $("#simultaneous1_2").val()
+                var actualAnswer2 = quizDict.simultaneous1_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_1_2").show();
+                    $("#fail_1_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_1_2").show();
+                    $("#success_1_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 2
+            $("#Q2_submit").click(function(e) {
+                //simultaneous2_1
+                var userAnswer1 = $("#simultaneous2_1").val()
+                var actualAnswer1 = quizDict.simultaneous2_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_2_1").show();
+                    $("#fail_2_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_2_1").show();
+                    $("#success_2_1").hide();
+                }
+                //simultaneous2_2
+                var userAnswer2 = $("#simultaneous2_2").val()
+                var actualAnswer2 = quizDict.simultaneous2_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_2_2").show();
+                    $("#fail_2_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_2_2").show();
+                    $("#success_2_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 3
+            $("#Q3_submit").click(function(e) {
+                //simultaneous3_1
+                var userAnswer1 = $("#simultaneous3_1").val()
+                var actualAnswer1 = quizDict.simultaneous3_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_3_1").show();
+                    $("#fail_3_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_3_1").show();
+                    $("#success_3_1").hide();
+                }
+                //simultaneous3_2
+                var userAnswer2 = $("#simultaneous3_2").val()
+                var actualAnswer2 = quizDict.simultaneous3_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_3_2").show();
+                    $("#fail_3_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_3_2").show();
+                    $("#success_3_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 4
+            $("#Q4_submit").click(function(e) {
+                //simultaneous4_1
+                var userAnswer1 = $("#simultaneous4_1").val()
+                var actualAnswer1 = quizDict.simultaneous4_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_4_1").show();
+                    $("#fail_4_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_4_1").show();
+                    $("#success_4_1").hide();
+                }
+                //simultaneous4_2
+                var userAnswer2 = $("#simultaneous4_2").val()
+                var actualAnswer2 = quizDict.simultaneous4_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_4_2").show();
+                    $("#fail_4_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_4_2").show();
+                    $("#success_4_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 5
+            $("#Q5_submit").click(function(e) {
+                //simultaneous5_1
+                var userAnswer1 = $("#simultaneous5_1").val()
+                var actualAnswer1 = quizDict.simultaneous5_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_5_1").show();
+                    $("#fail_5_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_5_1").show();
+                    $("#success_5_1").hide();
+                }
+                //simultaneous5_2
+                var userAnswer2 = $("#simultaneous5_2").val()
+                var actualAnswer2 = quizDict.simultaneous5_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_5_2").show();
+                    $("#fail_5_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_5_2").show();
+                    $("#success_5_2").hide();
+                }
+
+                //simultaneous5_3
+                var userAnswer3 = $("#simultaneous5_3").val()
+                var actualAnswer3 = quizDict.simultaneous5_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_5_3").show();
+                    $("#fail_5_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_5_3").show();
+                    $("#success_5_3").hide();
+                }
+                e.preventDefault();
+            });
+        });
+    </script>
+
+
+</head>
+
+<body onload="loadAnswers({{quiz}})">
+
+    <div class="col-sm-2">
+
+        <ul class="sidebar">
+
+            <a href="{{ url_for('homepage') }}" style="font-size:300%;" ;>Home</a>
+
+            <h3><a href="{{ url_for('progress', username=current_user.username) }}">Your Progress</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('transposing_equations', username=current_user.username) }}">Transposing Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('indices', username=current_user.username) }}">Indices</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('simultaneous_equations', username=current_user.username) }}">Simultaneous Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('geometry', username=current_user.username) }}">Geometry</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('test', username=current_user.username) }}">Test</a></h3>
+
+        </ul>
+    </div>
+
+
+    <div class="col-sm-10">
+
+        <div class=" jumbotron text-center " style="margin-bottom:0; background-color: gray; ">
+            <h1>Simultaneous Equations</h1>
+        </div>
+
+        <br>
+        <br>
+
+        <p>Simultaneous equations are a set of equations involving variables where more than one variable is unknown. Depending on the number of unknown variables, there needs to be an equal number of different equations. In the previous tutorial we learned
+            how to manipulate algebraic equations, and this skill is essential to have in order to solve these problems.</p>
+        <br>
+        <p>In this tutorial, we will be focusing only on linear simultaneous equations. There are essentially 4 different methods at your disposal to solve a set of simultaneous equations:</p>
+        <br>
+        <p>1. Addition <br> 2. Subtraction <br> 3. Multiplication <br> 4. Substitution</p>
+        <br>
+        <p>The way to go about solving equations with any of these methods is to try and get everything in terms of one variable, which you can then solve for, and afterwards use the known variable(s) to work backwards and solve for other variables. Let's
+            start with an example.</p>
+        <br>
+        <br>
+        <h2><b>Example 1:</b></h2>
+        <br>
+        <p>We have 2 linear equations</p>
+        <br>
+        <h5>2x + 5y = 27 <br> 2x + 2y = 12</h5>
+        <br>
+        <h4>Now you will notice that in both equations there is a 2x variable, which means we can use the subtraction method to get rid of the x terms. To use the subtraction method, we simply subtract one equation from the other, like so:</h4>
+
+        <p>Now you will notice that in both equations there is a 2x variable, which means we can use the subtraction method to get rid of the x terms. To use the subtraction method, we simply subtract one equation from the other, like so:</p>
+
+        <br>
+        <h5>(2x + 5y) - (2x + 2y) = 27 - 12</h5>
+        <br>
+        <p>Now we can perform the subtraction operation on both sides and see what's left</p>
+        <br>
+        <h5>2x - 2x + 5y - 2y = 27 - 12 <br> 3y = 15
+        </h5>
+        <br>
+        <p>Now we can manipulate this equation to find y, and find that y = 5 <br> Since we know the value for y, we can substitute it into any of the above equations to find x
+        </p>
+        <br>
+        <h5>2x + 5y = 27 <br> 2x + 5(5) = 27 <br> 2x + 25 = 27 <br> 2x = 2 <br> x = 1</h5>
+        <br>
+        <h4>And there we have it, we have found both x and y (1 and 5) <br> <br> In this example we used the subtraction method, in the next example we will show you how to use the multiplication method, as well as the subtraction method (which is just the
+            addition method backwards) <br> <br>
+        </h4>
+
+
+        <p>And there we have it, we have found both x and y (1 and 5) <br> <br> In this example we used the subtraction method, in the next example we will show you how to use the multiplication method, as well as the subtraction method (which is just the
+            addition method backwards) <br> <br>
+        </p>
+
+
+        <br>
+        <h2><b>Example 2:</b></h2>
+        <br>
+        <p>We have 2 linear equations</p>
+        <br>
+        <h5>
+            3x + 3y = 21 <br> 6x - 4y = 22</h5>
+        <br>
+        <h4>When we multiply these equations, the aim is to do so in such a way where either the x or y terms have the same coefficient in each equation. Lets try multiplying the first equation by 2.</h4>
+
+        <br>
+        <h5>2(3x + 3y = 21) = 2(21) <br> 6x + 6y = 42
+        </h5>
+        <br>
+        <h4>Now this new equation has identical values of x and y as the first one, however the coefficients are in a state where we can use the subtraction method, like so: We take the first equation and subtract the second equation</h4>
+        <br>
+        <h5>(6x + 6y) - (6x - 4y) = 42 - 22</h5>
+        <br>
+        <p>We now break this down and solve for y: </p>
+        <br>
+        <h5>6x - 6x + 6y + 4y = 42 - 22 <br> 10y = 20 <br> y = 2</h5>
+        <br>
+        <p>Since we now have y, we can once again substitute y into any equation to produce x:</p>
+        <br>
+        <h5>6x - 4y = 22 <br> 6x - 4(2) = 22 <br> 6x - 8 = 22 <br> 6x = 30 <br> x = 5</h5>
+        <br>
+        <h4>And there we have it, we have found both x and y (5 and 2). <br>
+            <br> It is also possible to multiply both of the equations by different values in order to get the coefficients to match. <br> We have now seen the multiplication, as well as the addition and subtraction methods, which leaves the substitution
+            method. <br> <br> The substitution method is quite simple, and it starts the same way as the other methods - by getting everything in terms of one variable.</h4>
+
+        <br>
+        <h2><b>Example 3:</b></h2>
+        <br>
+        <p>We have 2 linear equations</p>
+        <br>
+        <h5>x + y = 19 2x + 4y = 46</h5>
+        <br>
+        <p>We manipulate one of the equations to get it in terms of one variable, we will use equation 1.</p>
+        <br>
+        <h5>x = 19 - y</h5>
+        <br>
+        <p>Now that we have x in terms of y, we substitute the value for x into the other equation.</p>
+        <br>
+        <h5>
+            2(19 - y) + 4y = 46</h5>
+        <br>
+        <p>Now we simplify to find y.</p>
+        <br>
+        <h5>38 - 2y + 4y = 46 <br> 2y + 38 = 46 <br> 2y = 8 <br> y = 4</h5>
+        <br>
+        <p>Now we place y back into one of our first equations to find x.</p>
+        <br>
+        <h5>x = 19 - (4) <br> x = 15
+        </h5>
+        <br>
+        <h4>Now we have solved for x and y (15 and 4). <br> <br> So far we have covered all of the basic methods necessary to solve linear simultaneous equations, now it's time for some practice. Please complete the questions below.</h4>
+
+
+        <br>
+        <br>
+        <br>
+        <h3><b>Exercises:</b></h3>
+        <br>
+        <br>
+        <div class="quiz_box ">
+
+            <div class="quiz_content">
+                <h4><b>Question 1: </b></h4>
+                <p>Please evaluate the following: to find x and y:<br> <br> y + x = 5 <br> 2x - y = 1</p>
+                <form method="GET">
+                    <ol>
+                        <li>
+                            <label for="simultaneous1_1">x &emsp;=</label>
+                            <input type="number" id="simultaneous1_1" name="simultaneous1_1">
+                            <label id="success_1_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous1_2">y &emsp;=</label>
+                            <input type="number" id="simultaneous1_2" name="simultaneous1_2">
+                            <label id="success_1_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q1_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 2: </b></h4>
+                <p>Please evaluate the following: to find x and y:<br> <br> 3y + x = 10 <br> 2y - x = 5</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="simultaneous2_1">x &emsp;=</label>
+                            <input type="number" id="simultaneous2_1" name="simultaneous2_1">
+                            <label id="success_2_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_2_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous2_2">y &emsp;=</label>
+                            <input type="number" id="simultaneous2_2" name="simultaneous2_2">
+                            <label id="success_2_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_2_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q2_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 3: </b></h4>
+                <p>Please evaluate the following: to find x and y:<br> <br> 5x + 10y = 35 <br> 3x + 7y = 22
+                </p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="simultaneous3_1">x &emsp;=</label>
+                            <input type="number" id="simultaneous3_1" name="simultaneous3_1">
+                            <label id="success_3_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous3_2">y &emsp;=</label>
+                            <input type="number" id="simultaneous3_2" name="simultaneous3_2">
+                            <label id="success_3_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q3_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 4: </b></h4>
+                <p>Please evaluate the following: to find x and y:<br> <br> 23x + 2y = 27 <br> x + 2y = 5
+                </p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="simultaneous4_1">x &emsp;=</label>
+                            <input type="number" id="simultaneous4_1" name="simultaneous4_1">
+                            <label id="success_4_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous4_2">y &emsp;=</label>
+                            <input type="number" id="simultaneous4_2" name="simultaneous4_2">
+                            <label id="success_4_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q4_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 5: </b></h4>
+                <p>Please evaluate the following: to find x, y and z:<br> <br> x + y + z = 10 <br> 2x + 3y - z = 8 <br> z + y - x = 6
+                </p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="simultaneous5_1">x &emsp;=</label>
+                            <input type="number" id="simultaneous5_1" name="simultaneous5_1">
+                            <label id="success_5_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous5_2">y &emsp;=</label>
+                            <input type="number" id="simultaneous5_2" name="simultaneous5_2">
+                            <label id="success_5_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="simultaneous5_3">z &emsp;=</label>
+                            <input type="number" id="simultaneous5_3" name="simultaneous5_3">
+                            <label id="success_5_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q5_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+
+            <a class="prev_button " onclick="change_question(-1) ">❮</a>
+            <a class="next_button " onclick="change_question(1) ">❯</a>
+
+        </div>
+
+        <div class="qnum_container ">
+            <span class="qnum " onclick="this_question(1) ">1</span>
+            <span class="qnum " onclick="this_question(2) ">2</span>
+            <span class="qnum " onclick="this_question(3) ">3</span>
+            <span class="qnum " onclick="this_question(4) ">4</span>
+            <span class="qnum " onclick="this_question(5) ">5</span>
+        </div>
+        <script>
+            var question_no = 1;
+            to_question(question_no);
+
+            function change_question(n) {
+                to_question(question_no += n);
+            }
+
+            function this_question(n) {
+                to_question(question_no = n);
+            }
+
+            function to_question(n) {
+                var i;
+                var slides = document.getElementsByClassName("quiz_content ");
+                var qnums = document.getElementsByClassName("qnum ");
+                if (n > slides.length) {
+                    question_no = 1
+                }
+                if (n < 1) {
+                    question_no = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none ";
+                }
+                for (i = 0; i < qnums.length; i++) {
+                    qnums[i].className = qnums[i].className.replace(" active ", " ");
+                }
+                slides[question_no - 1].style.display = "block ";
+                qnums[question_no - 1].className += " active ";
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+    <!-- <div class=" jumbotron text-center " style="margin-bottom:0 ">
+  <a href="homepage.html " > </a>
+</div> -->
+
+</body>
+
+</html>

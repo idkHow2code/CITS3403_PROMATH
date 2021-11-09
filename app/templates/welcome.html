@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% if title %}
+    <title> {{title}} - Pro-Maths</title>
+    {% else %}
+    <title> Welcome to Pro-Maths</title>
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+        h3 {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <a href="/welcome" style="font-size: 80px; color:black;">Pro-Maths</a>
+        <p>Mathematics Education Website</p>
+        <a href="/login">Login</a> |
+        <a href="/register">Register</a>
+    </div>
+
+    <h3>Welcome messgae and Introduction</h3>
+
+
+</html>

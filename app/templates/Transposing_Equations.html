@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Transposing Equations</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='checkBtn.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //Load quiz answers
+        var quizDict = {};
+
+        function loadAnswers(lst) { //lst = quiz list declared from routes.py
+            for (i = 0; i < lst.length; i++) {
+                quizDict[lst[i].Question] = lst[i].Answer
+            }
+        }
+
+        $(document).ready(function() {
+            //Quiz page 1
+            $("#Q1_submit").click(function(e) {
+                //transposing_1
+                var userAnswer1 = $("#transposing_1").val()
+                var actualAnswer1 = quizDict.transposing_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_1_1").show();
+                    $("#fail_1_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_1_1").show();
+                    $("#success_1_1").hide();
+                }
+                //transposing_2
+                var userAnswer2 = $("#transposing_2").val()
+                var actualAnswer2 = quizDict.transposing_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_1_2").show();
+                    $("#fail_1_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_1_2").show();
+                    $("#success_1_2").hide();
+                }
+                //transposing_3
+                var userAnswer3 = $("#transposing_3").val()
+                var actualAnswer3 = quizDict.transposing_3
+                if (userAnswer3 == actualAnswer3) {
+                    $("#success_1_3").show();
+                    $("#fail_1_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_1_3").show();
+                    $("#success_1_3").hide();
+                }
+                //transposing_4
+                var userAnswer4 = $("#transposing_4").val()
+                var actualAnswer4 = quizDict.transposing_4
+                if (userAnswer4 == actualAnswer4) {
+                    $("#success_1_4").show();
+                    $("#fail_1_4").hide();
+                } else if (userAnswer4 != actualAnswer4) {
+                    $("#fail_1_4").show();
+                    $("#success_1_4").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 2
+            $("#Q2_submit").click(function(e) {
+                //transposing2_1
+                var userAnswer1 = $("#transposing2_1").val()
+                var actualAnswer1 = quizDict.transposing2_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_2_1").show();
+                    $("#fail_2_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_2_1").show();
+                    $("#success_2_1").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 3
+            $("#Q3_submit").click(function(e) {
+                //transposing3_1
+                var userAnswer1 = $("#transposing3_1").val()
+                var actualAnswer1 = quizDict.transposing3_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_3_1").show();
+                    $("#fail_3_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_3_1").show();
+                    $("#success_3_1").hide();
+                }
+                //transposing3_2
+                var userAnswer2 = $("#transposing3_2").val()
+                var actualAnswer2 = quizDict.transposing3_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_3_2").show();
+                    $("#fail_3_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_3_2").show();
+                    $("#success_3_2").hide();
+                }
+                //transposing3_3
+                var userAnswer1 = $("#transposing3_3").val()
+                var actualAnswer1 = quizDict.transposing3_3
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_3_3").show();
+                    $("#fail_3_3").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_3_3").show();
+                    $("#success_3_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 4
+            $("#Q4_submit").click(function(e) {
+                //transposing4_1
+                var userAnswer1 = $("#transposing4_1").val()
+                var actualAnswer1 = quizDict.transposing4_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_4_1").show();
+                    $("#fail_4_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_4_1").show();
+                    $("#success_4_1").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 5
+            $("#Q5_submit").click(function(e) {
+                //transposing5_1
+                var userAnswer1 = $("#transposing5_1").val()
+                var actualAnswer1 = quizDict.transposing5_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_5_1").show();
+                    $("#fail_5_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_5_1").show();
+                    $("#success_5_1").hide();
+                }
+                //transposing5_2
+                var userAnswer2 = $("#transposing5_2").val()
+                var actualAnswer2 = quizDict.transposing5_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_5_2").show();
+                    $("#fail_5_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_5_2").show();
+                    $("#success_5_2").hide();
+                }
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body onload="loadAnswers({{quiz}})">
+
+    <!--Script-->
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+
+
+    <div class="col-sm-2">
+
+        <ul class="sidebar">
+
+            <a href="{{ url_for('homepage') }}" style="font-size:300%;" ;>Home</a>
+
+            <h3><a href="{{ url_for('progress', username=current_user.username) }}">Your Progress</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('transposing_equations', username=current_user.username) }}">Transposing Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('indices', username=current_user.username) }}">Indices</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('simultaneous_equations', username=current_user.username) }}">Simultaneous Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('geometry', username=current_user.username) }}">Geometry</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('test', username=current_user.username) }}">Test</a></h3>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="col-sm-10">
+        <div class="jumbotron text-center" style="margin-bottom:0; background-color: gray;">
+            <h1>Transposing Equations</h1>
+
+        </div>
+
+        <br>
+        <br>
+        <p>Transposing equations is an integral aspect of mathematics. This involves using the laws of algebra to re-arrange an equation. The objective here is to rearrange the equation so that the unknown variable is by itself on one side of the equals
+            sign (=) and all the other variables are on the other side. For Example consider the equation from Newtons first law </p>
+        <br>
+        <br>
+        <img src="{{url_for('static', filename='f=ma.png')}}" class="equation">
+        <br>
+        <br>
+
+        <p>transposing this equation to make the acceleration a the subject of the equation would result in the eqation taking the form </p>
+
+        <br>
+        <br>
+
+        <img src="{{url_for('static', filename='Fimg.png')}}" class="equation">
+
+        <br>
+        <br>
+
+        <p>In this example the mass (m) was being multipied by a on the LHS. The laws of algebra are such that if we are to transpose an equation what is done on one side of the equation is undone on the other side when we bring a term to the opposite side
+            of the equals sign. Thus since (m) was being multiplied by a to bring it to the other side of the equals sign F must be divided by m.This is because no matter what is done to an equation to make a variable the subject of the equation, the
+            equation itself must in the end still be the equivelent of what it was before the manipulation. If we substituted numbers into the equation the numbers would remain the same regardless of how the equation is transposed.
+        </p>
+        <br>
+        <br>
+        <b><u><h2>Example 1</h2></u></b>
+        
+        <p>By applying the principle we just covered, Transpose F = ma such that m is the subject of the equation. </p>
+
+        <br>
+        <br>
+
+        <div>
+            <label>Answer:</label>
+            <!--Hint reveal button-->
+            <button type="button" id="Hint_1" onclick="Show_Hint(this)">Show Me!</button>
+            <h1 id="Hint1" style="visibility: hidden; text-align: left;">m = F&dividea</h1>
+        </div>
+
+        <br>
+        <br>
+
+        <p>The next important key principle to transposing equations is understanding how to deal with terms of an equation which are either additional or subtractive in nature. Consider the equation</p>
+
+        <br>
+        <br>
+        <img src="{{url_for('static', filename='v-u=at.png')}}" class="equation">
+
+        <br>
+        <p>Notice that the u term is negative and the v term is positive. If we simply wanted to make v the subject of the equation would take the form</p>
+        <br>
+        <br>
+
+        <img src="{{url_for('static', filename='v=at+u.png')}}" class="equation">
+
+        <br>
+        <br>
+        <br>
+
+        <h2>Order of operations (BIMDAS)</h2>
+
+        <p>When transposing an equation it is important to use the correct order of operation. By order of operation we mean add, subtract, multiply, divide, squaring etc. The convention that we use in math to achieve this is we carry out operations in the
+            following order. </p>
+
+        <br>
+        <br>
+
+        <p style=text-align:center>1. Do things in the brackets first ie expanding the brackets</p>
+
+        <br>
+
+        <p>2. Do anything involving a power or a square root next</p>
+        <br>
+        <p> 3. Carry out operations that involve either multiplication or division.</p>
+        <br>
+
+        <p>4. Lastly carry out the operations that involve addition or subtraction.</p>
+        <br>
+        <br>
+        <p>An easy acronym to remember this order of operation is BIMDAS (brackets, indicies, multiplication, division, addition, subtraction)</p>
+
+        <br>
+        <br>
+
+        <b><u><h2>Example 2</h2></u></b>
+
+        <p>Using the correct order of operation on the equation</p>
+        <br>
+        <br>
+        <img src="{{url_for('static', filename='v=at+u.png')}}" class="equation2">
+        <br>
+        <br>
+        <p>Re-arrange the equation such to make t the subject.</p>
+
+        <br>
+        <br>
+        <div>
+            <label>Answer:</label>
+            <button type="button" id="Hint_2" onclick="Show_Hint(this)">Show Me!</button>
+            <h1 id="Hint2" style="visibility: hidden; text-align: left;">(v-u)&dividea</h1>
+        </div>
+
+        <br>
+
+        <h3><b>Exercises:</b></h3>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="quiz_box">
+
+            <div class="quiz_content">
+                <h4><b>Question 1: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="transposing_1"> find x when x+5 = 15. x= </label>
+                            <input type="number" id="transposing_1" name="transposing1_1">
+                            <label id="success_1_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="transposing_2">find x when 5x+5 = 10. x= </sup> =</label>
+                            <input type="number" id="transposing_2" name="transposing1_2">
+                            <label id="success_1_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="transposing_3">find x when 9&dividex = 3. x= </label>
+                            <input type="number" id="transposing_3" name="transposing1_3">
+                            <label id="success_1_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_3" style="display:none">✘ Wrong!</label>
+                        </li>
+
+                        <li>
+                            <label for="transposing_4">5&dividex+10 = 25. x = </label>
+                            <input type="number" id="transposing_4" name="transposing1_4">
+                            <label id="success_1_4" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_4" style="display:none">✘ Wrong!</label>
+                            <br>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q1_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 2: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="transposing2_1">Transpose the equation pV = nRT such to make R the subject </label>
+                            <br>
+                            <input type="text" id="transposing2_1" name="transposing2_1">
+                            <label id="success_2_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_2_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+
+                        <br>
+
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q2_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 3: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="transposing3_1">if I = Q&dividet find Q</label>
+                            <input type="text" id="transposing3_1" name="transposing3_1">
+                            <label id="success_3_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="transposing3_2">if I = Q&dividet find t</label>
+                            <input type="text" id="transposing3_2" name="transposing3_2">
+                            <label id="success_3_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="transposing3_3">For the equation v<sup>2</sup> = u<sup>2</sup>+2as transpose the equation to make s the subject of the equation.</label>
+                            <select id="transposing3_3" name="transposing1_3">
+                            <option value="default">Please select</option>
+                            <option value="s = (v<sup>2</sup>-u<sup>2</sup>)&divide2a">s = (v<sup>2</sup>-u<sup>2</sup>)&divide2a</option>
+                            <option value="s = (v<sup>2</sup>+u<sup>2</sup>)&divide2a">s = (v<sup>2</sup>+u<sup>2</sup>)&divide2a</option>
+                            <option value="s = 2a&divide(v<sup>2</sup>-u<sup>2</sup>)">s = 2a&divide(v<sup>2</sup>-u<sup>2</sup>)</option>
+                        </select>
+                            <label id="success_3_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q3_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 4: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="transposing4_1">if bn&dividev + 5 = tx, v = </label>
+                            <input type="text" id="transposing4_1" name="transposing4_1">
+                            <label id="success_4_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_1" style="display:none">✘ Wrong!</label>
+                        </li>
+
+                        <div style="text-align: center;">
+                            <input type="submit" id="Q4_submit" value="Check">
+                        </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 5: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="transposing5_1"> if m = w&divide4 - 1&divide7u find u, u =</label>
+                            <input type="text" id="transposing5_1" name="transposing5_1">
+                            <label id="success_5_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices5_2">if m = w&divide4 - 1&divide7u find w, w= </label>
+                            <input type="text" id="transposing5_2" name="transposing5_2">
+                            <label id="success_5_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+
+                        <br><br>
+                        <div style="text-align: center;">
+                            <input type="submit" id="Q5_submit" value="Check">
+                        </div>
+                </form>
+            </div>
+
+
+
+            <a class="prev_button" onclick="change_question(-1)">❮</a>
+            <a class="next_button" onclick="change_question(1)">❯</a>
+
+        </div>
+
+        <div class="qnum_container">
+            <span class="qnum" onclick="this_question(1)">1</span>
+            <span class="qnum" onclick="this_question(2)">2</span>
+            <span class="qnum" onclick="this_question(3)">3</span>
+            <span class="qnum" onclick="this_question(4)">4</span>
+            <span class="qnum" onclick="this_question(5)">5</span>
+
+        </div>
+        <script>
+            function Show_Hint(button) {
+            var x = button.id;
+            switch (x) {
+                case 'Hint_1':
+                    var text = document.getElementById("Hint_1").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_1").innerHTML = "Show Me!";
+                        document.getElementById('Hint1').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_1").innerHTML = "Hide Me!";
+                        document.getElementById('Hint1').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_2':
+                    var text = document.getElementById("Hint_2").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_2").innerHTML = "Show Me!";
+                        document.getElementById('Hint2').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_2").innerHTML = "Hide Me!";
+                        document.getElementById('Hint2').style.visibility = "visible"
+                    }
+                    break;
+            }
+        }
+            var question_no = 1;
+            to_question(question_no);
+
+            function change_question(n) {
+                to_question(question_no += n);
+            }
+
+            function this_question(n) {
+                to_question(question_no = n);
+            }
+
+            function to_question(n) {
+                var i;
+                var slides = document.getElementsByClassName("quiz_content");
+                var qnums = document.getElementsByClassName("qnum");
+                if (n > slides.length) {
+                    question_no = 1
+                }
+                if (n < 1) {
+                    question_no = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < qnums.length; i++) {
+                    qnums[i].className = qnums[i].className.replace(" active", "");
+                }
+                slides[question_no - 1].style.display = "block";
+                qnums[question_no - 1].className += " active";
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

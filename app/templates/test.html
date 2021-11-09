@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basics Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/checkBtn.js"></script>
+    <script>
+
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center
+        }
+    </style>
+    </head>
+    <body>
+
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <b><h1>Basics Test</h1></b>
+        </div>
+
+
+
+        <div>
+                <form action="#" method="POST">
+                    <img src="{{quiz[0].Question}}">
+                    <label>{{quiz[0].QuestionText}}</label>
+                    <input type="text" name="Answer1"/>
+                    <br>
+                    <img src="{{quiz[1].Question}}">
+                    <label>{{quiz[1].QuestionText}}</label>
+                    <input type="text" name="Answer2"/>
+                    <br>
+                    <img src="{{quiz[2].Question}}">
+                    <label>{{quiz[2].QuestionText}}</label>
+                    <input type="text" name="Answer3"/>
+                    <br>
+                    <img src="{{quiz[3].Question}}">
+                    <label>{{quiz[3].QuestionText}}</label>
+                    <input type="text" name="Answer4"/>
+                    <br>
+                    <img src="{{quiz[4].Question}}">
+                    <label>{{quiz[4].QuestionText}}</label>
+                    <input type="text" name="Answer5"/>
+
+                    <br><br>
+                    <input type="hidden" name="Question1" value="{{quiz[0].Question}}"/>
+                    <input type="hidden" name="Question2" value="{{quiz[1].Question}}"/>
+                    <input type="hidden" name="Question3" value="{{quiz[2].Question}}"/>
+                    <input type="hidden" name="Question4" value="{{quiz[3].Question}}"/>
+                    <input type="hidden" name="Question5" value="{{quiz[4].Question}}"/>
+                    <div style="text-align: center;">
+                        <input type="submit" value="Save answer" style="align-content: center;">
+                    </div>
+                    
+                </form>
+        </div>
+    
+            
+    </body>
+</html>

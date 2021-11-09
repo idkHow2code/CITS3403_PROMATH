@@ -1,0 +1,8 @@
+{% extends "base.html" %} {% block content %}
+<div style="text-align:center">
+    <h2>Thank you, {{ user.username }}, for Registering</h2>
+    <h1>Pro-Maths</h1>
+    <h3>You now have full access to all our functionalities and contents</h3><br><br>
+    <button><a href="{{ url_for('login') }}">Login Now</a></button>
+</div>
+{% endblock %}

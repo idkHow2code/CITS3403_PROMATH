@@ -1,0 +1,127 @@
+{% extends "base.html" %} {% block content %}
+
+<!--Script-->
+<script>
+    function displayContent(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
+
+<div class="col-sm-2" style="padding-left: 0">
+    <ul id="myMenu">
+        <h4><a href="#" id="te" onclick="displayContent(event, 'Transposing_Equations')">Transposing Equations</a></h4><br>
+        <h4><a href="#" id="in" onclick="displayContent(event, 'Indices')">Indices</a></h4><br>
+        <h4><a href="#" id="se" onclick="displayContent(event, 'Simultaneous_Equations')">Simultaneous Equations</a></h4><br>
+        <h4><a href="#" id="geo" onclick="displayContent(event, 'Geometry')">Geometry</a></h4><br>
+    </ul>
+</div>
+
+
+
+
+
+<div class="col-sm-10">
+
+    <div id="Introduction" class="tabcontent">
+        <h1>INTRODUCTION</h1>
+        <br>
+        <p><img src="{{url_for('static', filename='mathintro.jpg')}}" width=100% height=250></p>
+        <br>
+        <h3 style="text-align:center;">Welcome to Pro-Maths</h3>
+        <br>
+        <br>
+        <p>Here at Pro Math we aim to provide a comfortable learning environment offering tutorials covering a variety of fun mathematical concepts. We start with some basic geometry and algebra, build on that, and work towards solving complicated problems
+            such as Triganometry, logarithms, and some calculus. In each section of this tutorial we have included various practice questions to aid your understanding, including some multiple choice questions, and questions where you submit an answer
+            to have it checked. After each section has been covered, there is a timed final exam, after which you will be given feedback on your grade.
+        </p>
+
+
+    </div>
+    <div id="Transposing_Equations" class="tabcontent" style="display: none;">
+        <h2>Transposing Equations</h2>
+        <br>
+        <p><img src="{{url_for('static', filename='algebra.jpg')}}" width=100% height=250></p>
+        <br>
+        <p>In the Transposing equations section of this course we delve into some basic algebra, including how to manipulate algebraic equations, how to understand them, and how to find unknown variables by doing so. We will begin by looking at some fundamental
+            equations such as those found in physics.
+        </p>
+        <br>
+        <br>
+
+        <div style="text-align:center;">
+            {% if current_user.is_anonymous %}
+            <button><a href="{{ url_for('login') }}">Please Login</a></button> {% else %}
+            <button><a href="{{ url_for('transposing_equations',username=current_user.username) }}">Go To Transposing equations</a></button> {% endif %}
+        </div>
+    </div>
+
+    <div id="Indices" class="tabcontent" style="display: none;">
+        <h2>Indices</h2>
+        <br>
+        <p><img src="{{url_for('static', filename='geometry.png')}}" width=100% height=250></p>
+        <p>Indices in mathematics are where a variable or a number is raised to a particular power. Indices can involve integer powers ranging from any negative number to any positive number, and they occur frequently in many mathematical applications. This
+            course will teach you how to understand and calculate indices.
+        </p>
+
+        <br>
+        <br>
+
+        <div style="text-align:center;">
+            {% if current_user.is_anonymous %}
+            <button><a href="{{ url_for('login') }}">Please Login</a></button> {% else %}
+            <button><a href="{{ url_for('indices',username=current_user.username) }}">Go To Incicies</a></button> {% endif %}
+        </div>
+
+    </div>
+
+    <div id="Simultaneous_Equations" class="tabcontent" style="display: none;">
+        <h2>Simultaneous Equations</h2>
+        <br>
+        <p><img src="{{url_for('static', filename='calculus.png')}}" width=100% height=250></p>
+        <p>Simultaneous equations are solved using algebra learned in the Transposing equations section of this course. They are a set of algebraic equations involving more than one unknown variable. In this section of the course you will learn a set of
+            methods for solving a set of these equations.
+        </p>
+        <br>
+        <br>
+
+        <div style="text-align:center;">
+            {% if current_user.is_anonymous %}
+            <button><a href="{{ url_for('login') }}">Please Login</a></button> {% else %}
+            <button><a href="{{ url_for('simultaneous_equations',username=current_user.username) }}">Go To Simulatanous equations</a></button> {% endif %}
+        </div>
+
+    </div>
+
+    <div id="Geometry" class="tabcontent" style="display: none;">
+        <h2>Geometry</h2>
+        <br>
+        <p><img src="{{url_for('static', filename='geometry.jpg')}}" width=100% height=250></p>
+        <p>In the geometry section of this course you will learn how to work with shapes, both 2D and 3D to find things like area, volume, and the angles that form these shapes. Geometry is a fun and interesting subject and once understood, it forms part
+            of your core understanding of maths when dealing with real world phenomena.
+        </p>
+
+        <br>
+        <br>
+
+        <div style="text-align:center;">
+            {% if current_user.is_anonymous %}
+            <button><a href="{{ url_for('login') }}">Please Login</a></button> {% else %}
+            <button><a href="{{ url_for('geometry',username=current_user.username) }}">Go to Geometry</a></button> {% endif %}
+        </div>
+
+    </div>
+
+
+
+    {% endblock %}

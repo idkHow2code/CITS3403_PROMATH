@@ -1,0 +1,25 @@
+{% extends "base.html" %} {% block content %}
+
+
+<div style="text-align:center;">
+    <h2>Login</h2>
+    <h4>Please Complete all fields below to login to your account:</h4>
+    <form action="" method="post" novalidate>
+        {{ form.hidden_tag() }}
+        <p>{{ form.username.label }}<br> {{ form.username(size=32) }}<br> {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+        <br>
+        <p>
+            {{ form.password.label }}<br> {{ form.password(size=32) }}<br> {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+        <br>
+        <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+        <br>
+        <p>{{ form.submit() }}</p>
+    </form>
+    <br>
+    <p>Don't have an account? Please <a href="{{ url_for('register') }}">Register</a> here</p>
+</div>
+{% endblock %}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<!-- This is the base file -->
+
+<head>
+    {% if title %}
+    <title>{{ title }} - Pro-Maths</title>
+    {% else %}
+    <title>Welcome to Pro-Maths</title>
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <a href="{{ url_for('homepage') }}" style="font-size: 80px; color:black;">Pro-Maths</a>
+        <p>Mathematics Education Website</p>
+        {% if current_user.is_anonymous %}
+        <a href="{{ url_for('login') }}">Login</a> |
+        <a href="{{ url_for('register') }}">Register</a>{% else %}
+        <p> Hi, {{ current_user.username }}</p><br>
+        <a href="{{ url_for('progress', username=current_user.username) }}">View Progress</a> |
+        <a href="{{ url_for('change_username') }}">Change Username</a> |
+        <a href="{{ url_for('logout') }}">Logout</a> {% endif %}
+    </div>
+    <!-- <hr> {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %} {% endwith %} -->
+    {% block content %}{% endblock %}
+</body>
+
+</html>

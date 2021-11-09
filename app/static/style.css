@@ -1,0 +1,394 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    ;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+li.r {
+    text-align: right;
+}
+
+
+/* Style the search box */
+
+#mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+}
+
+.sidebar {
+    list-style-type: none;
+
+    margin: 0;
+    background-color: #64a2dc;
+    height: 100vh;
+    position: fixed;
+    left: 0%;
+    right: 83%;
+}
+
+.sidebar a {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: #64a2dc;
+    padding: 10px 5%;
+    transition: 0.3s padding ease;
+}
+
+.sidebar a:hover {
+    padding-left: 20px;
+    background: white;
+    color: #64a2dc;
+    text-decoration: none;
+    transition: 0.3s padding ease;
+}
+
+
+/* Style the navigation menu inside the left column */
+
+#myMenu {
+    list-style-type: none;
+    padding: 5% 0;
+    margin: 0;
+    background-color: #64a2dc;
+    height: 100vh;
+    /* position: fixed;
+    left: 0%;
+    right: 83%; */
+}
+
+#myMenu h4 {
+    margin: 0
+}
+
+#myMenu a {
+    display: flex;
+    width: 100%;
+    color: white;
+    background-color: #64a2dc;
+    padding: 10px 5%;
+    transition: 0.3s padding ease;
+}
+
+#myMenu a:hover {
+    padding-left: 20px;
+    background: white;
+    color: #64a2dc;
+    text-decoration: none;
+    transition: 0.3s padding ease;
+}
+
+.equation2 {
+    width: 10%;
+    height: 10%
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.equation {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 10%;
+}
+
+.formular {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/* Style the navigation menu inside the left column */
+
+.side_bar {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    list-style-type: none;
+    left: 0;
+    background-color: #64a2dc;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.side_bar h3 a {
+    padding: 0px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.side_bar h3 a:hover {
+    background-color: white;
+}
+
+
+/* The followings are for the excercise box in each topics*/
+
+
+/* For the exercises box */
+
+.quiz_box {
+    position: relative;
+    background: #f1f1f1f1;
+}
+
+
+/* For each question */
+
+.quiz_content {
+    display: none;
+    padding: 40px;
+    text-align: left;
+}
+
+
+/* Design of previous and next button */
+
+.prev_button,
+.next_button {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    width: auto;
+    /*margin-top: -30px;*/
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* To place the next button to the right side of the quiz box */
+
+.next_button {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* Changes when on hover */
+
+.prev_button:hover,
+.next_button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+
+/* Question number container */
+
+.qnum_container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+
+/* For each question number */
+
+.qnum {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Background change when on hover or activate */
+
+.active,
+.qnum:hover {
+    background-color: #717171;
+}
+
+.calculator-grid {
+    background-color: transparent;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    /*how to center a div*/
+    justify-content: right;
+    /*Make all buttons join together in the center*/
+    min-height: 5vh;
+    grid-template-columns: repeat(4, 40px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 40px);
+}
+
+.calculator-grid>button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgb(187, 187, 187);
+}
+
+.calculator-grid>button:hover {
+    background-color: rgb(187, 187, 187, .7);
+}
+
+
+/*for AC and = buttons*/
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    background-color: black;
+    grid-column: 1 / -1;
+    display: flex;
+    /*To make the content appear on the right*/
+    align-items: flex-end;
+    /*To put space in between contents as much as possible*/
+    /*justify-content: space-between;*/
+    /*To put space around the center, not close to each other, but not near the ends of the div */
+    justify-content: space-around;
+    /*To line them up vertically*/
+    flex-direction: column;
+    padding: 10px;
+    /*To allow numbers to continue after max limit*/
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 2rem;
+}
+
+
+/*The Calculator Modal */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    -webkit-animation-name: fadeIn;
+    /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    height: 326px;
+    width: 190px;
+    margin-left: 80%;
+    margin-top: 25%;
+    justify-content: right;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+
+/* The Close Button */
+
+.close {
+    color: black;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-close {
+    background-color: transparent;
+    padding: 2px 16px;
+    color: black;
+}
+
+
+/* Add Animation */
+
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}

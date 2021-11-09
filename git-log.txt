@@ -1,0 +1,1307 @@
+commit 4549bee1a81c6ef25fd2d2a24e36475ff614f08f
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 17:26:21 2021 +0800
+
+    Fixed p
+
+commit 79fc9969abb359ab5faef15353c6434a3e400c7e
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 17:21:35 2021 +0800
+
+    Fixed padding on side bar
+
+commit 1365fce1241955960c72e2d9d2e58113b070e2e8
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 17:12:37 2021 +0800
+
+    Transposing Eq showme
+
+commit 06730bae900409bbef7c0fcd8064ac4c8d60d01a
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 17:00:00 2021 +0800
+
+    Fixed test page and centered go start test button
+
+commit 96718b192988ca501b18259bab650e6237538e63
+Merge: 4a7b7c8 d7a001e
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 16:54:02 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 4a7b7c885d8cc836ad1c6db8100fbd4eb16c6ef4
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 16:53:56 2021 +0800
+
+    FIxed start test button to center
+
+commit d7a001e500f79c10ee98f83781f02d3b170cfed9
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 16:51:16 2021 +0800
+
+    fixing website title
+
+commit 44ee04f160683f29e79edbf737e706f03b1cfff6
+Merge: 7e7f4b0 ac5699b
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 16:48:27 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 7e7f4b0a2069fb9f5f6a8c9507f7911358399833
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 16:48:19 2021 +0800
+
+    Changed test page title, content and spacing between button
+
+commit ac5699b1d0a8809bd16134b4a184bb464d3b08a6
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 16:46:24 2021 +0800
+
+    button in the center
+
+commit bc7ae9c1ed57407f97d4925233fc6831c309ba32
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 16:39:26 2021 +0800
+
+    minor changes
+
+commit 4861a944dffec84814d8b011de310a8fdd0c131d
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 16:35:09 2021 +0800
+
+    tests.py updated
+
+commit 3b332cac9edb1b432415fefe7f8283cd1b241a44
+Merge: 578af13 da3a05d
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 16:13:17 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 578af13ff7272dee8904d57df4a47bd17fdd1760
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 16:13:12 2021 +0800
+
+    Geometry stuff
+
+commit da3a05de6db529381bd75095d687346ecac94e62
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Thu May 20 16:10:08 2021 +0800
+
+    sidebar fixed
+
+commit 40482cfef73d468bbf9af12f5b8e36ca67880b24
+Author: Jiew23 <69634587+Jiew23@users.noreply.github.com>
+Date:   Thu May 20 15:33:01 2021 +0800
+
+    change side bar
+
+commit 77a4c837737f1dc64c6628778f96b13060bdc290
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 15:16:09 2021 +0800
+
+    fixed stray character
+
+commit bad03a6070b957950c3a604c9e48851f0e7c5d8e
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 15:00:43 2021 +0800
+
+    fixed font on sim eq
+
+commit 7883a1dbf76739be1b9a7cde8f84e11a16352bc0
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 14:25:49 2021 +0800
+
+    changing size of font
+
+commit 29006aa377f4d2a71b965da35f7508ba185238ff
+Merge: c8a5186 9d60a31
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 14:22:33 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test
+
+commit c8a51863d44800bfee7d76d56a27037860ff3dc7
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 20 14:22:23 2021 +0800
+
+    changing style on sim eq
+
+commit 9d60a31015fc9c1ea38cfc7c3489b9ce91b64cba
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 14:16:43 2021 +0800
+
+    SImultanous eqs white background
+
+commit 5bd9830e82ac5191b2fe29018ef8bfa0ea754340
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 13:41:27 2021 +0800
+
+    Background-color:white
+
+commit 7c0e2e968eb861b317a12c2f10cb68e1158cc6c0
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Thu May 20 12:55:42 2021 +0800
+
+    Adding 404 page
+
+commit 7ecd7a2e70d59aef6ca00f4ea76aa02d2320861d
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 09:24:18 2021 +0800
+
+    testResult fixed
+
+commit 5717aadb70e07a06a2cf7b4d6a0953bceeee2eac
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 09:18:21 2021 +0800
+
+    remove test tab from homepage
+
+commit 4eb4768ba0529a5d63cb954e5b0d845f15f300dd
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:44:14 2021 +0800
+
+    undo changes sim eq
+
+commit 5765f31421297e6fcc691762599fc7e06648c578
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:42:49 2021 +0800
+
+    simultanous equation "myMenu"
+
+commit 30e4073c2a6ce2393ae211e160000ec535a56daa
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:40:02 2021 +0800
+
+    undo changes transposing
+
+commit 57ebda8f4205a08c96cc6458aa2b12eb139c71c0
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:38:25 2021 +0800
+
+    transposing CSS
+
+commit 8ee6c7ad31e5fa3f714798abc446dcd780ef4b23
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:24:16 2021 +0800
+
+    Removed timer from test
+
+commit 714c3e800c50518331148e40db3b70ca9cd388bb
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:22:11 2021 +0800
+
+    Added timer to test
+
+commit fb10cfcaa473b886112fea3839a3dde8886f7a70
+Merge: 9966582 3675ccf
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:13:42 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 9966582f934822bbae96b62e1018ef158ddbc74a
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 02:06:54 2021 +0800
+
+    Change timer
+
+commit 3675ccf0ef9156b3b8252ca5cf3ece589b2c1ba7
+Merge: 9a13c45 de56696
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 02:02:57 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 9a13c450c51e1ec4e191038eeb0630f1457e3519
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 20 02:02:50 2021 +0800
+
+    Test is completed
+
+commit de5669688391f06cc8c6030b7a59409bb3473529
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 01:56:08 2021 +0800
+
+    changed timer
+
+commit 887da150b56e77e3199b3525fcdfb21a6d9ea35b
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 20 01:52:39 2021 +0800
+
+    Changed timer
+
+commit 6d5d93935d9168f027b6801f1c10266a7024501b
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 23:51:04 2021 +0800
+
+    changing homepage menu style
+
+commit bc142f46cf439b6706b6e49029324ae7b13cac9c
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 23:16:09 2021 +0800
+
+    adding afterRegister
+
+commit 8382f9a4bc15b35ab83784751b401c085364ba65
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 22:55:51 2021 +0800
+
+    Change username duplication error fixed
+
+commit c7ca5011a9205a5a3ef4d677ff5efbe29ff24930
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 20:29:36 2021 +0800
+
+    update test
+
+commit a33ee4b6faa446807e373630e0225f4fc8f914db
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 20:29:05 2021 +0800
+
+    add user test
+
+commit bf9e8ffae981dd0c687d92386a7060f87faed564
+Merge: cdaa46e edf8fc0
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed May 19 18:51:25 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit cdaa46e34e9f849d36b8c032abff0c17174cda20
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed May 19 18:51:20 2021 +0800
+
+    making test work
+
+commit edf8fc0a1d1cda6d23533e9c69a9f690de134456
+Merge: 0a86d96 cb0720d
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 16:13:03 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 0a86d9683edc27fec9c6b0b014b8f396b49b22e8
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 16:13:00 2021 +0800
+
+    add progress bar
+
+commit cb0720da49e8fc949a9144974e262a4abedc4043
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Wed May 19 16:00:10 2021 +0800
+
+    removing basic text
+
+commit 34017a45db60ac37f0d2939e61c3162ea2647540
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Wed May 19 15:57:34 2021 +0800
+
+    fixing image on homepage
+
+commit dfed91fcd7bb14aa974ba720ac9409ced472ed36
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 15:53:53 2021 +0800
+
+    Adding username in progress
+
+commit 99c0a1127dd8c761e8b0a2e34577175707a8fe29
+Merge: 5b1830c fd2b721
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 15:45:27 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 5b1830c25d895e61061f118af5216beee59cd10e
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 19 15:45:22 2021 +0800
+
+    Adding progress in homepage
+
+commit fd2b7212cb8b89942ae0365290bbf6f3d39ab25a
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed May 19 15:42:43 2021 +0800
+
+    Test Questions update
+
+commit a51bca6934fa22507c4ae71e55ec988b2da0b450
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed May 19 02:01:55 2021 +0800
+
+    All quiz modules completed
+
+commit b77803fbd37d1b01a76f5a2deba8a99c097287ba
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue May 18 20:04:49 2021 +0800
+
+    Major changes
+
+commit 094f2771328f5f988f0795bf3216306c27394495
+Merge: ac10c79 2ae4087
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue May 18 15:53:30 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit ac10c7915fde95df289e38a9f70a5671b790cbff
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue May 18 15:53:22 2021 +0800
+
+    Geometry QuizAnswers complete
+
+commit 2ae4087a801a3e8e4e85ceb11f7d9e30ce63db60
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Tue May 18 14:07:52 2021 +0800
+
+    change index in indices 2
+
+commit 613e6dbb435a6102bb711f23dd43646e6fae1270
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Tue May 18 14:06:59 2021 +0800
+
+    Changin id in indices
+
+commit f9dfb7bec55f7e3486bb6b5c3090ed765fe511e5
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue May 18 11:52:10 2021 +0800
+
+    loadAnswers function for quiz
+
+commit 6ae6bfacd17e1d051c4d17b725f79c60b912b4a5
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue May 18 01:50:51 2021 +0800
+
+    app.route(/test)
+
+commit 271251f57399a361e31377fca0ba7330f1c45635
+Merge: dffe10f 0e72f91
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 23:15:28 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit dffe10ff78bd5135336c45d684c88fe9c662c844
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 23:15:22 2021 +0800
+
+    saving changes
+
+commit 0e72f91535ee203f20bb7b63480d23d6db6c5ad2
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 22:38:28 2021 +0800
+
+    sim_eq sidebar updated
+
+commit 8538f0805d55da8406368cc572920b675b9f83c2
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 22:35:00 2021 +0800
+
+    side bar updated basics_progress
+
+commit 74c719920c2ed12a199dc775ea1b7f6d996648b1
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 22:33:21 2021 +0800
+
+    side bar updated
+
+commit 72b37005b16553ea1a7329f71f0190dda2970702
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:25:58 2021 +0800
+
+    changing homepage content
+
+commit e1eb243650bc2a14d81efda956386a969a8235a5
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:22:09 2021 +0800
+
+    config change
+
+commit ca425f3e1277c6b24f1fe25c923d701833641373
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:16:59 2021 +0800
+
+    changing homepage
+
+commit a733fa30f7bc58d963585e80f35bf8e10ad00294
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:14:44 2021 +0800
+
+    changing routes
+
+commit f66e59fe367f281bcafa6fc9dec1bf64514020a0
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:12:41 2021 +0800
+
+    merge tran eq
+
+commit 00aaf24486c9b0aa7a90fc32937dea5751612a81
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:11:56 2021 +0800
+
+    changing test results
+
+commit a66de3cc89da12a25391de6cd19cabc62fc7d3f4
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:10:56 2021 +0800
+
+    change testActive
+
+commit e4425f79b5e8eded426da0955b46602326602c3c
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:09:33 2021 +0800
+
+    changing sim eq
+
+commit a5e915a7b22b1f12e1ea45514b0be518ed818a3f
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:07:27 2021 +0800
+
+    indices changing
+
+commit 45da98a718577487ca943325afa245da7ba08e45
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:06:23 2021 +0800
+
+    Changing Geometry
+
+commit 81a7221443a3239d9433389b673980e0116fe4c0
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:05:05 2021 +0800
+
+    basics test
+
+commit c5259fcf3172012d87d18ddcb4f52e704c129c2c
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:04:24 2021 +0800
+
+    basics progress fix
+
+commit ca775af8d99825f71f1c8629cf348d505d3512da
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:03:29 2021 +0800
+
+    Changing base.html
+
+commit f7c1fc66ccf949a66bb933a9440a03c6c8b0bb87
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 22:02:29 2021 +0800
+
+    fixing afterRegister
+
+commit 7f5be845f56134262728267882c8c69568ff813c
+Merge: cacf9b4 66c33db
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 21:33:30 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit cacf9b4bcb3761f80c6b3d5116358ab090645b7d
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 21:33:24 2021 +0800
+
+    Test
+
+commit 66c33db8b390cc206aaa08fa02b2902eb6b2fa1e
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 21:30:09 2021 +0800
+
+    added more line breaks
+
+commit a428904b40b5f76e02e01d11dc68be3c0e7cf4c0
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 21:29:32 2021 +0800
+
+    added line breaks under buttons
+
+commit c10a605fa9faa3723af5bb2f64ea86f4a5a65acd
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 21:13:09 2021 +0800
+
+    Enter spaces between text and buttons
+
+commit 02105afcb055aa8099a8bc6f9551a3bd0c82404d
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Mon May 17 21:05:16 2021 +0800
+
+    image for geometry
+
+commit 4d40b5b2154d4fd256dd25966e0ff18f480177bd
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 21:04:29 2021 +0800
+
+    fixing image
+
+commit 6fd43446b5bc899e2a684c42b11eca6ac1c9e1c8
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 21:00:34 2021 +0800
+
+    adding image to geometry
+
+commit 14f1f350d720df36471a092e846d32d66340a24d
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 20:58:12 2021 +0800
+
+    fixed transposing eqs info
+
+commit f6d5440576da43358ea5092c26cad07da1d7cf1e
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 20:55:18 2021 +0800
+
+    fixing geometry blurb on homepage
+
+commit acf895462053f57d829f6e3149464c0c959e7045
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 20:51:38 2021 +0800
+
+    fixing homepage still
+
+commit bf4a09ec68065b0a2d4c669ab16cf414241a6a84
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 20:48:37 2021 +0800
+
+    updating homepage info
+
+commit ef657989fd766df08478b937c22b146ef27a6007
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 17:27:16 2021 +0800
+
+    test 2
+
+commit c0b032d30347ded580bc2cf00a1f7f3b814f19da
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Mon May 17 17:25:26 2021 +0800
+
+    test
+
+commit a7e441e9ef6833c716651f5a5e417cda12a8536c
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 17:01:24 2021 +0800
+
+    set structures
+
+commit 9f8653f97631df2a433d52c36b76e8c6fbe40585
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 16:39:50 2021 +0800
+
+    log in
+
+commit 69ce53df2332bd0210d3c43f476dd9ff7675203b
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 16:25:43 2021 +0800
+
+    Update test url pointer on side bar
+
+commit 665ba548bc4cd29a1729591426d4a55d9ea46939
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 16:23:43 2021 +0800
+
+    Undid some changes to home page that caused error
+
+commit 2e310f42dce9abdea4da526b1114d672c9f4e884
+Merge: ff2504a ccd75c9
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 16:18:39 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit ff2504af1c70c13139b243eec62df75f747ee951
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Mon May 17 16:18:29 2021 +0800
+
+    updated home page
+
+commit ccd75c9fe220913033aa6a2001304c14e7c6abaa
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Mon May 17 16:09:25 2021 +0800
+
+    fix login
+
+commit f88bcb3efa89cdbe61e1f020b129e549e23727e2
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 15:57:16 2021 +0800
+
+    added a question for database QuizAnswers
+
+commit 2c136b3c25e43dfeec15120b73d5c5f0ede438ca
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 14:42:39 2021 +0800
+
+    changed id to class for checkbtn.js
+
+commit 02c3f8318043423ac195db7ae32984ee1c424413
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 14:24:17 2021 +0800
+
+    checkBtn.js fixed
+
+commit ed2f9d1b84c8295dc89db0ddbd1632fa3e1bb926
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 10:34:05 2021 +0800
+
+    models.py changes
+
+commit ab477e930b5955692859ce48646f85336631cae5
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 01:53:50 2021 +0800
+
+    added unit test
+
+commit 574530c0b1e8c962e1dd667fed9512a76e3e5fe7
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 00:29:11 2021 +0800
+
+    added chkbtn.jquery onto modules
+
+commit fbf22b6739e0ad4369e827f624df5bda7172203b
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 17 00:27:46 2021 +0800
+
+    updated database at models.py
+
+commit a45f27a033796762961a72deab10f1231cd82018
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Sun May 16 18:19:21 2021 +0800
+
+    Update testActive.html
+
+commit d1a4a54407326dd368a77fd7e14a01312d0c8266
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Sun May 16 18:18:14 2021 +0800
+
+    Update testActive.html
+
+commit 8eca75ba905b006f7f0f4b1a08a52a3220292b9b
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Sun May 16 17:25:42 2021 +0800
+
+    mystyle.css --> style.css
+
+commit 4c4e746bb750161e81ffe8564808fb09bf608c4d
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Sun May 16 12:46:42 2021 +0800
+
+    database for Tests Questions Part 1
+
+commit f41d63f6feba04cdaf239c831d042aa7eec8af94
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 18:33:20 2021 +0800
+
+    Register complete
+
+commit 8399d942db4cb6654e40896c558d0e45769df850
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 17:53:40 2021 +0800
+
+    functional login form
+
+commit 2205bb534c0b7a4f34e3fa38a3f58e567cac3430
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 16:25:59 2021 +0800
+
+    Create Database
+
+commit 42c5031447c3a5710a9888ac204b7a270efb4701
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 15:54:41 2021 +0800
+
+    login form update
+
+commit 248ee58ece17fb4598ded40bfc682dae9c3cf6c9
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 15:32:04 2021 +0800
+
+    add login
+
+commit a0b6d215ae0c9a122448e90ebe5d31ae5903e9e5
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 15:08:46 2021 +0800
+
+    import new requirement
+
+commit 205545be2649083427c36443b964eaec1007a825
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 15:06:14 2021 +0800
+
+    links fixed
+
+commit d4d67f3795682bc8505fbc20256369b3b02a0f38
+Merge: 1b5a7c3 bd08153
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 14:54:00 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 1b5a7c3f1fce4e14418e6da61f4323d9f5b5407a
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 14:53:54 2021 +0800
+
+    add config.py
+
+commit bd08153cb040311f0b799272580cda684da11e27
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Sat May 15 14:51:31 2021 +0800
+
+    routes.py and left tab bar update
+
+commit 3aa55ec58b05f46b7332e88925bf5162f98ddaff
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 13:11:16 2021 +0800
+
+    requirements.txt update
+
+commit a46285c7f057ff1f811d209ed4268d6fb4c7de15
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Sat May 15 12:57:05 2021 +0800
+
+    routes set
+
+commit fbd388fac711237f46b1f3f48f91ee6a1a5e4590
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Thu May 13 00:32:23 2021 +0800
+
+    made static folder and shift all images and css
+
+commit 757f2f5b975ebf2d753c0792987d9604bcf9b602
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:50 2021 +0800
+
+    Delete intermediateTest.html
+
+commit 7c0b63c44c385f9c5886cbcd86579d30d0226e57
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:40 2021 +0800
+
+    Delete intermediate3.html
+
+commit 35b3d36aa96999324acf956571dc923fcbbb11e6
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:30 2021 +0800
+
+    Delete intermediate2.html
+
+commit e10534745680546e0f1fc032a415339c553f42dd
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:21 2021 +0800
+
+    Delete intermediate1.html
+
+commit 56cd79f99f6bc0e438e6c4fbb319f963129e109b
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:10 2021 +0800
+
+    Delete advancedTest.html
+
+commit d41403eee5daa7704e263b9f634097d732f085ca
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:44:00 2021 +0800
+
+    Delete advanced3.html
+
+commit 86a064d2cd059337438d7fd37b403e4a50eef316
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:43:50 2021 +0800
+
+    Delete advanced2.html
+
+commit e549ba65ddd49a71d68c09ecd69448ec0f97fd87
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 12 18:43:41 2021 +0800
+
+    Delete advanced1.html
+
+commit 6c2e33e60bccb6a8f01c05a0a1f48525a2ee5af4
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed May 12 18:29:54 2021 +0800
+
+    Shifting all html pages into templates
+
+commit 8b8390bf8a998840ee637dcbb7939e48e616385b
+Merge: c930bbb dd38aee
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 12 13:46:16 2021 +0800
+
+    Merge branch 'server' into main
+
+commit dd38aeef0ec614d6013aa393ea1973aa6970ad89
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 12 13:34:28 2021 +0800
+
+    set up app directory
+
+commit c930bbb21a1504c221c979b6a39366e036a3c1ec
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 17:13:53 2021 +0800
+
+    Update basicTest.html
+
+commit 81bc3a23de2465fd134458cdc1b9e77c830ad9fc
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 17:09:13 2021 +0800
+
+    Basic tests results page
+
+commit 2bad5f6ad611c89944cfe92dfc78369b62f7b5ab
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 17:07:06 2021 +0800
+
+    timer/page redirect complete
+
+commit a1fbed43edac1e5a769c58ed551ecb6f860f097c
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 17:02:06 2021 +0800
+
+    Timer/page redirect complete
+
+commit 78045eb366fca5587000bf7e0d4abbae6ca401cc
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 15:38:15 2021 +0800
+
+    Update test_active.html
+
+commit 3636231dc30500c6f8702b81bd82064c45e1710a
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 14:59:12 2021 +0800
+
+    Update test_active.html
+
+commit f2f67919896463ebe062b66d31c92d6712463b60
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 14:51:01 2021 +0800
+
+    Update test_active.html
+
+commit ada4547b426029ccdc08f8d246e2c9eb14964a58
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Thu May 6 14:45:19 2021 +0800
+
+    Add files via upload
+
+commit c50fc3173a19238d7bb6ff49e5d62e693d675f3a
+Author: Nick-Dawg <nickdawg@protonmail.com>
+Date:   Thu May 6 14:23:52 2021 +0800
+
+    test git
+
+commit 8e41536e2f3c1291b6cebf4402c207adc6d28c2b
+Merge: 4a7fea3 076bdbc
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Wed May 5 17:24:17 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 4a7fea39451c68de503929e158a62fdfdf76ece4
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Wed May 5 17:24:12 2021 +0800
+
+    Button added and text to test home page
+
+commit 076bdbc223eedc48e85a08ac409b12c654415ed3
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 5 17:23:32 2021 +0800
+
+    Update basic1.html
+
+commit 57952ee7d01d080ceb3a85349494dbb869eae19f
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed May 5 17:21:04 2021 +0800
+
+    delete file
+
+commit 1f3f1fbcda999e53f6d2a5a4e07b31de775122af
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Wed May 5 17:08:56 2021 +0800
+
+    Start test button added
+
+commit 94375c5b93cb9252155c0f5b5a35955655f9a422
+Author: mysticnova <21595359@student.uwa.edu.au>
+Date:   Wed May 5 17:00:43 2021 +0800
+
+    test
+
+commit e63553789866db9b6a4b70789a656cae592001b6
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed May 5 16:27:26 2021 +0800
+
+    Update Transposing_Equations.html
+
+commit 1a6eac78bb7a065ed224a5446773d718adacd7c0
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed May 5 16:22:18 2021 +0800
+
+    Update Transposing_Equations.html
+    
+    Changed some questions input from number to text
+
+commit 59ae10a2a751afac36a5f28a7d6643da0aa6a3a0
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 5 16:18:20 2021 +0800
+
+    Delete homepage working.html
+
+commit 7222d51681322eb422cc99eae31433b896330908
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed May 5 16:17:42 2021 +0800
+
+    Delete homepage with text.html
+
+commit 04c37ea98dc8fd20d4cb24b33172314249399856
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed May 5 14:36:57 2021 +0800
+
+    Update Transposing_Equations.html
+
+commit d4a4eba118be526e9e4b0b285e585cb7aa937cb3
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed May 5 14:29:05 2021 +0800
+
+    Completed questions
+
+commit ad6f311fa863824a4f92b9a1f4168aee904e57e6
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Mon May 3 17:39:40 2021 +0800
+
+    Update mystyle.css
+
+commit 0ee5cef09d93b053333fad245e61d8a54a5c7971
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Mon May 3 17:21:18 2021 +0800
+
+    Update Transposing_Equations.html
+
+commit 39045fe87d1d31e8025e0f3a00c86c81a860f6f5
+Merge: 4eeb55e e008e27
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 3 11:52:51 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 4eeb55ef76e07beb6346b5f9f586e7e78e97387c
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 3 11:52:46 2021 +0800
+
+    Upgraded Calculator to be in a Modal
+
+commit e008e275e1a9662f54447c097ccc1b3c1c1f2c16
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Mon May 3 10:05:36 2021 +0800
+
+    Update Transposing_Equations.html
+
+commit ce3d886b815a1604f0238ab7793dd41c7d9573aa
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 3 01:51:22 2021 +0800
+
+    Formula and text changes to Geometry
+
+commit 12ed9574fff72b81762968107a1412c882e87719
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Mon May 3 00:26:11 2021 +0800
+
+    Updated Calculator Feature
+
+commit cedeb69f1389ba93aa6e8d085e2c3a28972a24ac
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Sun May 2 17:45:55 2021 +0800
+
+    Update simultaneous_equations.html
+    
+    fixed the font size, added questions although the mechanism to check the answers hasn't been added
+
+commit 86b04f9cc02919ee47b3f0aa818257a215defbb1
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Sun May 2 17:25:10 2021 +0800
+
+    Added Feature: Calculator
+
+commit ccab8c46429753cb170013d2f44a41435f134137
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Sun May 2 01:05:24 2021 +0800
+
+    Geometry Questions
+
+commit 652aedabbecf82b00be4fa5910955f5245cceb85
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Thu Apr 29 20:36:17 2021 +0800
+
+    Update simultaneous_equations.html
+    
+    filled out most of the tutorial, needs font adjusted and questions put at bottom
+
+commit 3bb39bf9f895953ade0d573a84e43bb7c49e00ef
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Thu Apr 29 18:06:54 2021 +0800
+
+    Add files via upload
+
+commit 31d67c2b162af2e1f8c7548855e8e70650b26429
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Thu Apr 29 18:05:01 2021 +0800
+
+    Adding more content and cut quiz section to bottom
+
+commit 5fe8ec125a736e554612708144c2ef6504c19eef
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 17:34:03 2021 +0800
+
+    Changing header of indices and TE
+
+commit 82bd2be3bf7f0f4ec4d1f8d6fb411e6bfc4b7c66
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 17:29:47 2021 +0800
+
+    Changing title of basics progress
+
+commit 89deb0310ab99e15f229df9f9254ed8d51893f92
+Merge: 47cb21b b2c19f3
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 17:27:02 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test
+
+commit 47cb21b9529e3c4049b623fd3dec1364db8f1bd2
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 17:26:51 2021 +0800
+
+    Adding questions in Indices and formatting
+
+commit b2c19f3b9555f7c555b6d649f2ba1045d37cbf7c
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Thu Apr 29 17:13:26 2021 +0800
+
+    Update Geometry.html
+    
+    Changed title to Geometry
+
+commit a643f5b64b79834cd370ea2212e727994ff46663
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 11:59:02 2021 +0800
+
+    Indices Section Completed
+
+commit a656d52aa763cf76a3742d81994319c41da32c17
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 09:55:23 2021 +0800
+
+    updating basics side bar
+
+commit 0874e4d7afc87a5021515cbc76033d3a30a57bae
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 01:44:46 2021 +0800
+
+    homepage update
+
+commit 8c2146e70b32d3035e312eefe457efc1978395b6
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 29 01:35:24 2021 +0800
+
+    Basics site and topic quiz template update
+
+commit 79f176da1845a8df1f42b56dd12fcda1a8edc61a
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Wed Apr 28 20:03:43 2021 +0800
+
+    Updating indices and adding basics progress
+
+commit dae4b51ca369baf238f6e4398093763f46675044
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Wed Apr 28 19:31:38 2021 +0800
+
+    fixing myMenu
+
+commit dc1f106861d6529bd43a03e72e58e0e3ac39e858
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Wed Apr 28 19:28:40 2021 +0800
+
+    changing basics format
+
+commit 7df301d53f74267f0be861a3717da02bcc5472fe
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Wed Apr 28 18:09:46 2021 +0800
+
+    Homepage side bar update
+
+commit ec63c2ba0dba0966034ea07960037813ef73c9b5
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed Apr 28 17:07:19 2021 +0800
+
+    Update Transposing_Equations.html
+
+commit 96c85c6da3c15c55fa67f6744fa0b2ecaf4ba8d3
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed Apr 28 16:54:12 2021 +0800
+
+    Rename basic3.html to Transposing_Equations.html
+
+commit 5286ae60c7d68ea649052d83894af8e42c7edfe2
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed Apr 28 16:46:14 2021 +0800
+
+    Update basic3.html
+
+commit 8a630c515cc23c4fa5348f46a033285433460b82
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed Apr 21 18:37:22 2021 +0800
+
+    Add files via upload
+
+commit 1a1ffb5dcf0dbd07eacbc559dd4a8c6735d85359
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed Apr 21 18:36:24 2021 +0800
+
+    Update homepage.html
+    
+    just updated the images on the homepage
+
+commit 86b4a819cf5b56def7c51c7d736ed40b32b6f553
+Merge: 3ed4388 6c75947
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 21 17:34:59 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit 3ed4388ff085862423b29ed2918e032c8a87c979
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 21 17:34:50 2021 +0800
+
+    Update Geometry.html
+
+commit 7a679bd9d94bd398a222654391568775e24f402e
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 21 17:34:35 2021 +0800
+
+    homepage working content display none block
+
+commit 6c75947e6f3df92da55923221e48c73bca976490
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed Apr 21 17:30:22 2021 +0800
+
+    Add files via upload
+
+commit d1a92de21baec7ad3c2868152467ca31dc971061
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed Apr 21 17:20:53 2021 +0800
+
+    Add files via upload
+
+commit b9bf9675ecc6d62182ced018ddd3be4b220d75dd
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Wed Apr 21 16:47:55 2021 +0800
+
+    Add files via upload
+
+commit 9378c13b4c509032ac9e786cede54ac38df798c5
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 21 16:13:49 2021 +0800
+
+    Basic Geometry class v2
+
+commit 622d9de1943bed0e078ef0c2abe0ef3689942a94
+Merge: da5ee21 efaf77e
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed Apr 21 16:08:52 2021 +0800
+
+    Merge branch 'main' of https://github.com/CITS3403MATH/Test into main
+
+commit da5ee21fde18c3b4d0e45c8e814fbdc1738389ab
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed Apr 21 16:08:43 2021 +0800
+
+    update login
+
+commit efaf77e36088b4ee95d7b1c15b514af1ab4d9ef1
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed Apr 21 16:07:32 2021 +0800
+
+    Add files via upload
+
+commit d94cfb85558ac9f725640b8d99169d5eb3256f41
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Wed Apr 21 14:18:11 2021 +0800
+
+    Add files via upload
+
+commit 04b08fdcdc7c979d2eacb3648aafe6bb52d15638
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue Apr 20 00:01:47 2021 +0800
+
+    Basic Geometry class v1
+
+commit aabb78f7e7e69324fe8efdd768e1b7845804e2a0
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Fri Apr 16 11:52:11 2021 +0800
+
+    Add login,register,css file and clickable title
+
+commit 5dcff746d306ca45ee4a1f2d0d277607d600469c
+Author: jiew23 <22700247@student.uwa.edu.au>
+Date:   Thu Apr 15 10:35:31 2021 +0800
+
+    Changing title
+
+commit f9ac1ef79012d0707a3b821750f6b3b8eaa07cc2
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 14 17:07:09 2021 +0800
+
+    fix search bar link
+
+commit 8cdaf776dd7451ca0b723cb5abb1dbe164665f37
+Author: Jessy <jiewang0203@gmail.com>
+Date:   Wed Apr 14 11:50:39 2021 +0800
+
+    test
+
+commit fdf16adae9a27957f42a1b1df3fec4f0a4822b7f
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Wed Apr 14 01:35:39 2021 +0800
+
+    added skeleton of webpage
+
+commit 6818ff6e4d690d8eb29d20286d7fff440becce2d
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue Apr 13 18:55:05 2021 +0800
+
+    Rename bootstrap example.html to homepage.html
+
+commit 13ad88699ecab8db46811c26cc71f0adc38ba314
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue Apr 13 18:52:25 2021 +0800
+
+    added search bar
+
+commit 781f70a269c780f4eff439f7b9bf745cfaea70d7
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Tue Apr 13 18:27:08 2021 +0800
+
+    Add files via upload
+
+commit c5073f93ae376e97800919e2210e0694a0e879bb
+Author: Nick-Dawg <82442356+Nick-Dawg@users.noreply.github.com>
+Date:   Tue Apr 13 17:52:44 2021 +0800
+
+    Add files via upload
+
+commit db6b89525a4053d4abf920ffd70e132dfda60d5e
+Author: Jiew23 <69634587+Jiew23@users.noreply.github.com>
+Date:   Tue Apr 13 17:49:43 2021 +0800
+
+    Create websites
+
+commit f838616bb1df28103fa21821f7ec2ef313f068b5
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue Apr 13 17:24:33 2021 +0800
+
+    Delete homepage.html
+
+commit 17384b97c9ef6b276ff02b16ff6d3d8c19304367
+Author: Kwoh Ee Zher <eezher@gmail.com>
+Date:   Tue Apr 13 17:14:23 2021 +0800
+
+    Add homepage
+
+commit c9eebac9eb4716fd588416c703a1fd76c55226c2
+Author: mysticnova <36267092+mysticnova@users.noreply.github.com>
+Date:   Tue Apr 13 17:09:52 2021 +0800
+
+    Initial commit

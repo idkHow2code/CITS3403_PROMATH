@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="col-sm-2">
+
+        <ul class="sidebar">
+
+            <a href="{{ url_for('homepage') }}" style="font-size:300%;" ;>Home</a>
+
+            <h3><a href="{{ url_for('progress', username=current_user.username) }}">Your Progress</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('transposing_equations', username=current_user.username) }}">Transposing Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('indices', username=current_user.username) }}">Indices</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('simultaneous_equations', username=current_user.username) }}">Simultaneous Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('geometry', username=current_user.username) }}">Geometry</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('test', username=current_user.username) }}">Test</a></h3>
+
+        </ul>
+    </div>
+    <div class="col-sm-10">
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <a href="{{ url_for('homepage') }}" style="font-size: 80px; color:black;">Pro-Maths</a>
+            <p>Mathematics Education Website</p>
+        </div>
+        <h2>Test</h2>
+        <br>
+        <br>
+
+        <p>This is a short test that will test your knowledge on all of the content covered in the basics section of Pro-Math.It is advisable that you complete the basics section of this before attempting this
+            test. The topics covered in this test are Transposing equations, Indices, Geometry and simultaneous equations. </p>
+            <br>
+            <br>
+            
+        <br>
+        <br>
+        <div style="text-align:center">
+            <form action="{{ url_for('test_active', username=current_user.username) }}" method="GET">
+                <input style = "text-align:center" type="submit" value="Start Test" />
+            </form>
+        </div>
+    
+
+
+        </div>
+        
+    </div>
+
+
+</body>
+
+</html>

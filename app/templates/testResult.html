@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basics Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body onload="loadAnswers({{TestQuestions}},'{{Question1}}','{{Question2}}','{{Question3}}','{{Question4}}','{{Question5}}')">
+
+
+    <div class="container">
+        <h1><b>Test Results</b></h1>
+        <h2 id="UserResults"></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                <th>Question Number</th>
+                <th>Your Answer</th>
+                <th>Answer</th>
+                <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>    
+                <tr id="Q1_TableRow">
+                    <td id="Q1_QuestionNo">1</td>
+                    <td id="Q1_UserAnswer">{{answer1}}</td>
+                    <td><p id="Q1_TestAnswer"></p></td>
+                    <td id="Q1_Result"></td>
+                </tr>
+                <tr id="Q2_TableRow">
+                    <td id="Q2_QuestionNo">2</td>
+                    <td id="Q2_UserAnswer">{{answer2}}</td>
+                    <td><p id="Q2_TestAnswer"></p></td>
+                    <td id="Q2_Result"></td>
+                </tr>
+                <tr id="Q3_TableRow">
+                    <td id="Q3_QuestionNo">3</td> 
+                    <td id="Q3_UserAnswer">{{answer3}}</td>
+                    <td><p id="Q3_TestAnswer"></p></td>
+                    <td id="Q3_Result"></td>
+                </tr>
+                <tr id="Q4_TableRow">
+                    <td id="Q4_QuestionNo">4</td>
+                    <td id="Q4_UserAnswer">{{answer4}}</td>
+                    <td><p id="Q4_TestAnswer"></p></td>
+                    <td id="Q4_Result"></td>
+                </tr>
+                <tr id="Q5_TableRow">
+                    <td id="Q5_QuestionNo">5</td>
+                    <td id="Q5_UserAnswer">{{answer5}}</td>
+                    <td><p id="Q5_TestAnswer"></p></td>
+                    <td id="Q5_Result"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div style="text-align:center">
+            <form action="{{ url_for('homepage', username=current_user.username) }}">
+                <input type="submit" value="Back To Homepage" />
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var lst = [];
+        var ans = [];
+        function percentage(num,total)
+        {
+            return (num/total)*100;
+        }        
+        function loadAnswers(ExamQ,Q1,Q2,Q3,Q4,Q5) { //lst = quiz list declared from routes.py
+            for (i=0; i < ExamQ.length; i++)
+            {
+                lst.push(ExamQ[i].Question)
+                ans.push(ExamQ[i].Answer)
+            }
+            for (i=0; i < lst.length; i++){
+                if (lst[i] == Q1){
+                    document.getElementById("Q1_TestAnswer").innerHTML = ans[i]
+                } 
+                if (lst[i] == Q2){
+                    document.getElementById("Q2_TestAnswer").innerHTML = ans[i]
+                } 
+                if (lst[i] == Q3){
+                    document.getElementById("Q3_TestAnswer").innerHTML = ans[i]
+                } 
+                if (lst[i] == Q4){
+                    document.getElementById("Q4_TestAnswer").innerHTML = ans[i]
+                } 
+                if (lst[i] == Q5){
+                    document.getElementById("Q5_TestAnswer").innerHTML = ans[i]
+                } 
+            }
+            correct = 0
+            var UserAns1 = document.getElementById("Q1_UserAnswer").innerHTML
+            var ExamAns1 = document.getElementById("Q1_TestAnswer").innerHTML
+            if (UserAns1 == ExamAns1) {
+                var Result_Q1 = document.getElementById("Q1_Result")
+                Result_Q1.innerHTML = "Correct"
+                var Q1 = document.getElementById("Q1_TableRow")
+                Q1.classList.add("success")
+                correct++
+            }
+            else if (UserAns1 != ExamAns1){
+                var Result_Q1 = document.getElementById("Q1_Result")
+                Result_Q1.innerHTML = "Wrong"
+                var Q1 = document.getElementById("Q1_TableRow")
+                Q1.classList.add("danger")
+            }
+
+            var UserAns2 = document.getElementById("Q2_UserAnswer").innerHTML
+            var ExamAns2 = document.getElementById("Q2_TestAnswer").innerHTML
+            if (UserAns2 == ExamAns2) {
+                var Result_Q2 = document.getElementById("Q2_Result")
+                Result_Q2.innerHTML = "Correct"
+                var Q2 = document.getElementById("Q2_TableRow")
+                Q2.classList.add("success")
+                correct++
+            }
+            else if (UserAns2 != ExamAns2){
+                var Result_Q2 = document.getElementById("Q2_Result")
+                Result_Q2.innerHTML = "Wrong"
+                var Q2 = document.getElementById("Q2_TableRow")
+                Q2.classList.add("danger")
+            }
+
+            var UserAns3 = document.getElementById("Q3_UserAnswer").innerHTML
+            var ExamAns3 = document.getElementById("Q3_TestAnswer").innerHTML
+            if (UserAns3 == ExamAns3) {
+                var Result_Q3 = document.getElementById("Q3_Result")
+                Result_Q3.innerHTML = "Correct"
+                var Q3 = document.getElementById("Q3_TableRow")
+                Q3.classList.add("success")
+                correct++
+            }
+            else if (UserAns3 != ExamAns3){
+                var Result_Q3 = document.getElementById("Q3_Result")
+                Result_Q3.innerHTML = "Wrong"
+                var Q3 = document.getElementById("Q3_TableRow")
+                Q3.classList.add("danger")
+            }
+
+            var UserAns4 = document.getElementById("Q4_UserAnswer").innerHTML
+            var ExamAns4 = document.getElementById("Q4_TestAnswer").innerHTML
+            if (UserAns4 == ExamAns4) {
+                var Result_Q4 = document.getElementById("Q4_Result")
+                Result_Q4.innerHTML = "Correct"
+                var Q4 = document.getElementById("Q4_TableRow")
+                Q4.classList.add("success")
+                correct++
+            }
+            else if (UserAns4 != ExamAns4){
+                var Result_Q4 = document.getElementById("Q4_Result")
+                Result_Q4.innerHTML = "Wrong"
+                var Q4 = document.getElementById("Q4_TableRow")
+                Q4.classList.add("danger")
+            }
+
+            var UserAns5 = document.getElementById("Q5_UserAnswer").innerHTML
+            var ExamAns5 = document.getElementById("Q5_TestAnswer").innerHTML
+            if (UserAns5 == ExamAns5) {
+                var Result_Q5 = document.getElementById("Q5_Result")
+                Result_Q5.innerHTML = "Correct"
+                var Q5 = document.getElementById("Q5_TableRow")
+                Q5.classList.add("success")
+                correct++
+            }
+            else if (UserAns5 != ExamAns5){
+                var Result_Q5 = document.getElementById("Q5_Result")
+                Result_Q5.innerHTML = "Wrong"
+                var Q5 = document.getElementById("Q5_TableRow")
+                Q5.classList.add("danger")
+            }
+            var Score = percentage(correct,5)
+            document.getElementById("UserResults").innerHTML = "{{user}}" + " : " + Score + "%"
+        }
+        
+    </script>
+    </body>
+</html>

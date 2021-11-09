@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Geometry</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='checkBtn.js') }}"></script>
+    <!--Calculator Functions-->
+    <script src="{{ url_for('static', filename='calculator.js') }}"></script>
+    <style>
+        #circle {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%
+        }
+        
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid blue;
+        }
+        
+        #square {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        
+        #rectangle {
+            width: 200px;
+            height: 100px;
+            background: yellow;
+        }
+    </style>
+
+    <script>
+        //Load quiz answers
+        var quizDict = {};
+
+        function loadAnswers(lst) { //lst = quiz list declared from routes.py
+            for (i = 0; i < lst.length; i++) {
+                quizDict[lst[i].Question] = lst[i].Answer
+            }
+        }
+
+        $(document).ready(function() {
+            //Quiz page 1
+            $("#Q1_submit").click(function(e) {
+                //Geometry1_1
+                var userAnswer1 = $("#Geometry1_1").val()
+                var actualAnswer1 = quizDict.Geometry1_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_1_1").show();
+                    $("#fail_1_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_1_1").show();
+                    $("#success_1_1").hide();
+                }
+                //Geometry1_2
+                var userAnswer2 = $("#Geometry1_2").val()
+                var actualAnswer2 = quizDict.Geometry1_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_1_2").show();
+                    $("#fail_1_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_1_2").show();
+                    $("#success_1_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 2
+            $("#Q2_submit").click(function(e) {
+                //Geometry2_1 && Geometry2_2
+                var userAnswer1 = $("#Geometry2_1").val()
+                var userAnswer2 = $("#Geometry2_2").val()
+                var actualAnswer1 = quizDict.Geometry2_1
+                var actualAnswer2 = quizDict.Geometry2_2
+                var roundAnswer1 = Math.round(actualAnswer1)
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                    } else if (userAnswer2 != actualAnswer2) {
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                        $("#success_2_2").hide();
+                        $("#fail_2_2").show();
+                    }
+                } else if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                    } else if (userAnswer1 != actualAnswer1) {
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                        $("#success_2_1").hide();
+                        $("#fail_2_1").show();
+                    }
+                } else if ((userAnswer1 == actualAnswer2) || (userAnswer1 == roundAnswer2)) {
+                    if ((userAnswer2 == actualAnswer1) || (userAnswer2 == roundAnswer1)) {
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                    } else if (userAnswer2 != actualAnswer1) {
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                        $("#success_2_2").hide();
+                        $("#fail_2_2").show();
+                    }
+                } else if ((userAnswer2 == actualAnswer1) || (userAnswer2 == roundAnswer1)) {
+                    if ((userAnswer1 == actualAnswer2) || (userAnswer1 == roundAnswer2)) {
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                        $("#success_2_1").show();
+                        $("#fail_2_1").hide();
+                    } else if (userAnswer1 != actualAnswer2) {
+                        $("#success_2_2").show();
+                        $("#fail_2_2").hide();
+                        $("#success_2_1").hide();
+                        $("#fail_2_1").show();
+                    }
+                } else if ((userAnswer1 != actualAnswer1) && (userAnswer2 != actualAnswer2)) {
+                    $("#fail_2_1").show();
+                    $("#success_2_1").hide();
+                    $("#fail_2_2").show();
+                    $("#success_2_2").hide();
+                }
+                //Geometry2_3
+                var userAnswer3 = $("#Geometry2_3").val()
+                var actualAnswer3 = quizDict.Geometry2_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_2_3").show();
+                    $("#fail_2_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_2_3").show();
+                    $("#success_2_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 3
+            $("#Q3_submit").click(function(e) {
+                //Geometry3_1
+                var userAnswer1 = $("#Geometry3_1").val()
+                var actualAnswer1 = quizDict.Geometry3_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_3_1").show();
+                    $("#fail_3_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_3_1").show();
+                    $("#success_3_1").hide();
+                }
+                //Geometry3_2
+                var userAnswer2 = $("#Geometry3_2").val()
+                var actualAnswer2 = quizDict.Geometry3_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_3_2").show();
+                    $("#fail_3_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_3_2").show();
+                    $("#success_3_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 4
+            $("#Q4_submit").click(function(e) {
+                //Geometry4_1
+                var userAnswer1 = $("#Geometry4_1").val()
+                var actualAnswer1 = quizDict.Geometry4_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_4_1").show();
+                    $("#fail_4_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_4_1").show();
+                    $("#success_4_1").hide();
+                }
+                //Geometry4_2
+                var userAnswer2 = $("#Geometry4_2").val()
+                var actualAnswer2 = quizDict.Geometry4_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_4_2").show();
+                    $("#fail_4_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_4_2").show();
+                    $("#success_4_2").hide();
+                }
+                //Geometry4_3
+                var userAnswer3 = $("#Geometry4_3").val()
+                var actualAnswer3 = quizDict.Geometry4_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_4_3").show();
+                    $("#fail_4_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_4_3").show();
+                    $("#success_4_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 5
+            $("#Q5_submit").click(function(e) {
+                //Geometry5_1
+                var userAnswer1 = $("#Geometry5_1").val()
+                var actualAnswer1 = quizDict.Geometry5_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_5_1").show();
+                    $("#fail_5_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_5_1").show();
+                    $("#success_5_1").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 6
+            $("#Q6_submit").click(function(e) {
+                //Geometry6_1
+                var userAnswer1 = $("#Geometry6_1").val()
+                var actualAnswer1 = quizDict.Geometry6_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_6_1").show();
+                    $("#fail_6_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_6_1").show();
+                    $("#success_6_1").hide();
+                }
+                //Geometry6_2
+                var userAnswer2 = $("#Geometry6_2").val()
+                var actualAnswer2 = quizDict.Geometry6_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_6_2").show();
+                    $("#fail_6_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_6_2").show();
+                    $("#success_6_2").hide();
+                }
+                e.preventDefault();
+            });
+
+        });
+    </script>
+</head>
+
+<body onload="loadAnswers({{quiz}})">
+
+    <!--Script-->
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    <div class="col-sm-12">
+        <div id="calcModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-close">
+                    <span class="close">&times;</span>
+                    <div class="calculator-grid">
+                        <div class="output">
+                            <div data-previous-operand class="previous-operand"></div>
+                            <div data-current-operand class="current-operand"></div>
+                        </div>
+                        <button data-all-clear class="span-two">AC</button>
+                        <button data-delete>DEL</button>
+                        <button data-operation>÷</button>
+                        <button data-number>1</button>
+                        <button data-number>2</button>
+                        <button data-number>3</button>
+                        <button data-operation>*</button>
+                        <button data-number>4</button>
+                        <button data-number>5</button>
+                        <button data-number>6</button>
+                        <button data-operation>+</button>
+                        <button data-number>7</button>
+                        <button data-number>8</button>
+                        <button data-number>9</button>
+                        <button data-operation>-</button>
+                        <button data-number>.</button>
+                        <button data-number>0</button>
+                        <button data-equals class="span-two">=</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-sm-2">
+
+        <ul class="sidebar">
+
+            <a href="{{ url_for('homepage') }}" style="font-size:300%;" ;>Home</a>
+
+            <h3><a href="{{ url_for('progress', username=current_user.username) }}">Your Progress</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('transposing_equations', username=current_user.username) }}">Transposing Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('indices', username=current_user.username) }}">Indices</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('simultaneous_equations', username=current_user.username) }}">Simultaneous Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('geometry', username=current_user.username) }}">Geometry</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('test', username=current_user.username) }}">Test</a></h3>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+    <div class="col-sm-10">
+        <div class="jumbotron text-center" style="margin-bottom:0; background-color: gray;">
+            <h1>Geometry</h1>
+
+        </div>
+        <h2 style="text-align: center;">What is Geometry?</h2>
+        <h3 style="text-align: center; color: blue;">Geometry is all about shapes and their properties. <br> If you like playing with toys, or like drawing, then Geometry is for you!</h3>
+        <div>
+            <h4>In Geometry, you will learn about area of 2D shapes, volume of 3D shapes and Angles inside of these shapes <br> These are shapes that you will see everywhere in your daily life</h4>
+            <h4> Examples of 2D shapes: </h4>
+            <img src="{{url_for('static', filename='2dshapes.jpg')}}" alt="2D Shapes">
+            <h4> Examples of 3D shapes: </h4>
+            <img src="{{url_for('static', filename='3dshapes.jpg')}}" alt="3D Shapes">
+        </div>
+        <br>
+
+        <h2>2D Shapes</h2>
+        <div class="solid">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Shape</th>
+                        <th>Area of Shapes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Circle</td>
+                        <td>
+                            <div id="circle"></div>
+                        </td>
+                        <td>
+                            <p class="formular" style="text-align: left;">πr<sup>2</sup></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Triangle</td>
+                        <td>
+                            <div id="triangle"></div>
+                        </td>
+                        <td>
+                            <p class="formular" style="text-align: left;"><sup>1/</sup>2&timesb&timesh</p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Square</td>
+                        <td>
+                            <div id="square"></div>
+                        </td>
+                        <td>
+                            <p class="formular" style="text-align: left;">S&timesS</p>
+                            <h4>S = side of square <br> Note: All sides are
+                                <br> the same length
+                            </h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rectangle</td>
+                        <td>
+                            <div id="rectangle"></div>
+                        </td>
+                        <td>
+                            <p class="formular" style="text-align: left;">L&timesW</p>
+                            <h4>L = Length <br> W = Width <br> Note: L ≠ W
+                            </h4>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <h4>What is π?</h4>
+        <p>π (spelled as pi) is the circumference of any circle to the diameter of that circle. Regardless of the circle's size, this ratio will always equal pi.</p>
+        <h5 style="color:red">To be exact</h5>
+        <p class="formular">π = 3.1415926535</p>
+        <h5 style="color:red">But this is too long to remember... Hence, we should always round it up to 3d.p</h5>
+        <p class="formular">π ≈ 3.142</p>
+        <h4>In summary, expect any shapes with a circle to have a π in it's formula</h4>
+        <br>
+
+        <h2>3D Shapes</h2>
+        <div class="solid">
+            <h4>Imagine you have a container of any of these shape, and you want to fill it up with water to the brim.</h4>
+            <h4 style="color: red;">How much water is there in your container?</h4>
+            <h4>Well, let's find out, by finding out how much volume there is in each 3D shapes.</h4>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Shape</th>
+                        <th>Volume of Shapes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Cube</td>
+                        <td><img src="{{url_for('static', filename='cube.png')}}" alt="cube"></td>
+                        <td>
+                            <p class="formular" style="text-align: left;"> a<sup>3</sup></p>
+                            <h3>a = side of the cube</h3> <br> Property: every side of the cube is the same
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rectangle</td>
+                        <td><img src="{{url_for('static', filename='rectangular.png')}}" alt="rectangular prism"></td>
+                        <td>
+                            <p class="formular" style="text-align: left;">l&timesb&timesh</p>
+                            <h3>l = length <br> b = base <br> h = height
+                            </h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cone</td>
+                        <td><img src="{{url_for('static', filename='cone.png')}}" alt="cone" style="width: 180px; height: 200px;"></td>
+                        <td>
+                            <p class="formular" style="text-align: left;">πr<sup>2</sup>(<sup>h/</sup>3)</p>
+                            <h3>π = 3.142 <br> r = radius <br> h = height
+                            </h3>
+                    </tr>
+                    <tr>
+                        <td>Cylinder</td>
+                        <td><img src="{{url_for('static', filename='cylinder.png')}}" alt="cylinder"> </td>
+                        <td>
+                            <p class="formular" style="text-align: left;">πr<sup>2</sup>h</p>
+                            <h3>π = 3.142 <br> r = radius <br> h = height
+                            </h3>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <br>
+
+        <h2>Angles</h2>
+        <h3>Now, we will learn about angles in a 2D shape.</h3>
+        <div class="solid">
+            <h4>In every shape, no matter how many sides or how complicated the shape is:</h4>
+            <h3>Total Angle inside a Shape is always </h3>
+            <h1 style="color: red;">360<sup>o</sup> </h1>
+            <h4>The formula:</h4>
+            <p class="formular" style="text-align: left;">(n−2) × 180<sup>o</sup></p>
+            <h5>Every Triangle has 3 sides, n = 3</h5>
+            <h6>Total angle in a Triangle= (3-2) x 180<sup>o</sup> = 180<sup>o</sup></h6>
+            <h5>Every Square has 4 sides, n = 4 </h5>
+            <h6>Total angle in a Square= (4-2) x 180<sup>o</sup> = 360<sup>o</sup></h6>
+            <h5>Every Pentagon has 5 sides, n = 5</h5>
+            <h6>Total angle in a Pentagon= (5-2) x 180<sup>o</sup> = 540<sup>o</sup></h6>
+            <h5>Every Hexagon has 6 sides, n = 6</h5>
+            <h6>Total angle in a Hexagon= (6-2) x 180<sup>o</sup> = 720<sup>o</sup></h6>
+            <img src="{{url_for('static', filename='polygon_total_angle.jpg')}}" alt="total angle = 360">
+            <h4>You may wonder, does the size of the shape affect the angles?</h4>
+            <h5>The answer is:</h5>
+            <h1 style="color: red;">NO </h1>
+            <img src="{{url_for('static', filename='different_triangle.jpg')}}" alt="same shape, different sizes">
+            <h4>In Geometry, we are also able to find the length of a triangle using only 2 sides out of 3</h4>
+            <h5>This is known as Pythagoras Theorem:</h5> 
+            <h5>Where a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></h5> 
+            <p class="formular">a<sup>2</sup>&timesb<sup>2</sup> = c<sup>2</sup></p>
+            <img src="{{url_for('static', filename='pythagoras_theorem.jpg')}}" alt="pythagoras theorem">
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <h3><b>Exercises:</b></h3>
+        <div class="quiz_box">
+
+            <div class="quiz_content">
+
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <!--Hint reveal button-->
+                    <button type="button" id="Hint_1" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h1 id="Hint1" style="visibility: hidden; text-align: center;">Area: πr<sup>2</sup></h1>
+                </div>
+
+
+
+                <h4><b>Question 1: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q1.png')}}" alt="Question1" style="width: 15%; height: 15%;">
+                    <br>
+
+                    <h4>Fill in the blanks:</h4>
+                    <label>π &emsp; &emsp; = &emsp; 3.14</label> <br>
+                    <label for="Geometry1_1" class="QuizText">radius = </label>
+                    <input type="number" class="userInput" id="Geometry1_1" />
+                    <label id="success_1_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_1_1" style="display:none">✘ Wrong!</label>
+                    <br><br>
+
+                    <p>Solve the Area:</p>
+                    <label for="Geometry1_2" class="QuizText">3.14 &times radius<sup>2</sup> &emsp;= </label>
+                    <input type="number" class="userInput" id="Geometry1_2" />
+                    <label id="success_1_2" style="display:none">✔ Correct!</label>
+                    <label id="fail_1_2" style="display:none">✘ Wrong!</label>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q1_submit" value="Check">
+                    </div>
+                </form>
+
+
+            </div>
+
+            <div class="quiz_content">
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <button type="button" id="Hint_2" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h1 id="Hint2" style="visibility: hidden; text-align: center;"><sup>1</sup>/2&timesb&timesh</h1>
+                </div>
+                <h4><b>Question 2: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q2.png')}}" alt="Question2" style="width: 15%; height: 15%;">
+                    <br>
+
+                    <h4>Fill in the blanks:</h4>
+                    <label for="Geometry2_1" class="QuizText">base = </label>
+                    <input type="number" class="userInput" id="Geometry2_1" />
+                    <label id="success_2_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_2_1" style="display:none">✘ Wrong!</label>
+                    <br>
+                    <label for="Geometry2_2" class="QuizText">height = </label>
+                    <input type="number" class="userInput" id="Geometry2_2" />
+                    <label id="success_2_2" style="display:none">✔ Correct!</label>
+                    <label id="fail_2_2" style="display:none">✘ Wrong!</label>
+                    <br><br>
+
+                    <p>Solve the Area:</p>
+                    <label for="Geometry2_3" class="QuizText">Area = </label>
+                    <input type="number" class="userInput" id="Geometry2_3" />
+                    <label id="success_2_3" style="display:none">✔ Correct!</label>
+                    <label id="fail_2_3" style="display:none">✘ Wrong!</label>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q2_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <button type="button" id="Hint_3" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h1 id="Hint3" style="visibility: hidden; text-align: center;">V = a<sup>3</sup></h1>
+                </div>
+                <h4><b>Question 3: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q3.png')}}" alt="Question3" style="width: 15%; height: 15%;">
+                    <br>
+
+                    <h4>Fill in the blanks:</h4>
+                    <label for="Geometry3_1" class="QuizText">a &emsp; = </label>
+                    <input type="number" class="userInput" id="Geometry3_1" />
+                    <label id="success_3_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_3_1" style="display:none">✘ Wrong!</label>
+                    <br><br>
+
+                    <p>Solve the Area:</p>
+                    <label for="Geometry3_2" class="QuizText">Volume &emsp; = </label>
+                    <input type="number" class="userInput" id="Geometry3_2" />
+                    <label id="success_3_2" style="display:none">✔ Correct!</label>
+                    <label id="fail_3_2" style="display:none">✘ Wrong!</label>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q3_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <button type="button" id="Hint_4" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h1 id="Hint4" style="visibility: hidden; text-align: center;">V = πr<sup>2</sup>h</h1>
+                </div>
+                <h4><b>Question 4: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q4.png')}}" alt="Question4" style="width: 15%; height: 15%;">
+                    <br>
+                    <h4>Fill in the blanks:</h4>
+                    <label>π &emsp; &emsp; = &emsp; 3.14</label> <br>
+                    <label for="Geometry4_1" class="QuizText">radius = </label>
+                    <input type="number" class="userInput" id="Geometry4_1" />
+                    <label id="success_4_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_4_1" style="display:none">✘ Wrong!</label>
+                    <br>
+                    <label for="Geometry4_2" class="QuizText">height = </label>
+                    <input type="number" class="userInput" id="Geometry4_2" />
+                    <label id="success_4_2" style="display:none">✔ Correct!</label>
+                    <label id="fail_4_2" style="display:none">✘ Wrong!</label>
+                    <br><br>
+
+                    <p>Find Volume: round up to (1.dp)</p>
+                    <label for="Geometry4_3" class="QuizText">Volume = </label>
+                    <input type="number" class="userInput" id="Geometry4_3" />
+                    <label id="success_4_3" style="display:none">✔ Correct!</label>
+                    <label id="fail_4_3" style="display:none">✘ Wrong!</label>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q4_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <button type="button" id="Hint_5" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h4 id="Hint5" style="visibility: hidden; text-align: center;">Total Angle: 180<sup>o</sup></h4>
+                </div>
+                <h4><b>Question 5: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q5.png')}}" alt="Question5" style="width: 15%; height: 15%;">
+                    <br>
+
+                    <h4>Solve:</h4>
+                    <label for="Geometry5_1" class="QuizText">a &emsp; = &emsp; </label>
+                    <input type="number" class="userInput" id="Geometry5_1" /><sup>o</sup>
+                    <label id="success_5_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_5_1" style="display:none">✘ Wrong!</label>
+                    <br><br>
+
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q5_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <div style="float: right;">
+                    <label>Hint:</label>
+                    <button type="button" id="Hint_6" onclick="Show_Hint(this)">Show Me!</button>
+                    <!--Calculator button-->
+                    <button onclick="openModel()">Open Calculator</button>
+                    <h3 id="Hint6" style="visibility: hidden; text-align: center;">a<sup>2</sup>&timesb<sup>2</sup> = c<sup>2</sup></h3>
+                </div>
+                <h4><b>Question 6: </b></h4>
+                <form>
+                    <img src="{{url_for('static', filename='Geometry_Q6.png')}}" alt="Question6" style="width: 15%; height: 15%;">
+                    <br>
+
+                    <h4>Fill in the blanks:</h4>
+                    <label for="Geometry6_1" class="QuizText">c<sup>2</sup> &emsp; = &emsp; </label>
+                    <input type="number" class="userInput" id="Geometry6_1" />
+                    <label id="success_6_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_6_1" style="display:none">✘ Wrong!</label>
+                    <br><br>
+                    <label for="Geometry6_2" class="QuizText">c &emsp; = &emsp; </label>
+                    <input type="number" class="userInput" id="Geometry6_2" />
+                    <label id="success_6_2" style="display:none">✔ Correct!</label>
+                    <label id="fail_6_2" style="display:none">✘ Wrong!</label>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q6_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <a class="prev_button" onclick="change_question(-1)">❮</a>
+            <a class="next_button" onclick="change_question(1)">❯</a>
+
+        </div>
+
+        <div class="qnum_container">
+            <span class="qnum" onclick="this_question(1)">1</span>
+            <span class="qnum" onclick="this_question(2)">2</span>
+            <span class="qnum" onclick="this_question(3)">3</span>
+            <span class="qnum" onclick="this_question(4)">4</span>
+            <span class="qnum" onclick="this_question(5)">5</span>
+            <span class="qnum" onclick="this_question(6)">6</span>
+        </div>
+        <br>
+        <br>
+        <br>
+
+
+
+    </div>
+
+
+    <script>
+        var question_no = 1;
+        to_question(question_no);
+
+        function change_question(n) {
+            to_question(question_no += n);
+        }
+
+        function this_question(n) {
+            to_question(question_no = n);
+        }
+
+        function to_question(n) {
+            var i;
+            var slides = document.getElementsByClassName("quiz_content");
+            var qnums = document.getElementsByClassName("qnum");
+            if (n > slides.length) {
+                question_no = 1
+            }
+            if (n < 1) {
+                question_no = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < qnums.length; i++) {
+                qnums[i].className = qnums[i].className.replace(" active", "");
+            }
+            slides[question_no - 1].style.display = "block";
+            qnums[question_no - 1].className += " active";
+        }
+
+        //Hide and Show example
+        function Show_Hint(button) {
+            var x = button.id;
+            switch (x) {
+                case 'Hint_1':
+                    var text = document.getElementById("Hint_1").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_1").innerHTML = "Show Me!";
+                        document.getElementById('Hint1').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_1").innerHTML = "Hide Me!";
+                        document.getElementById('Hint1').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_2':
+                    var text = document.getElementById("Hint_2").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_2").innerHTML = "Show Me!";
+                        document.getElementById('Hint2').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_2").innerHTML = "Hide Me!";
+                        document.getElementById('Hint2').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_3':
+                    var text = document.getElementById("Hint_3").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_3").innerHTML = "Show Me!";
+                        document.getElementById('Hint3').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_3").innerHTML = "Hide Me!";
+                        document.getElementById('Hint3').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_4':
+                    var text = document.getElementById("Hint_4").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_4").innerHTML = "Show Me!";
+                        document.getElementById('Hint4').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_4").innerHTML = "Hide Me!";
+                        document.getElementById('Hint4').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_5':
+                    var text = document.getElementById("Hint_5").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_5").innerHTML = "Show Me!";
+                        document.getElementById('Hint5').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_5").innerHTML = "Hide Me!";
+                        document.getElementById('Hint5').style.visibility = "visible"
+                    }
+                    break;
+                case 'Hint_6':
+                    var text = document.getElementById("Hint_6").innerHTML;
+                    if (text.match("Hide Me!")) {
+                        document.getElementById("Hint_6").innerHTML = "Show Me!";
+                        document.getElementById('Hint6').style.visibility = "hidden"
+                    } else if (text.match("Show Me!")) {
+                        document.getElementById("Hint_6").innerHTML = "Hide Me!";
+                        document.getElementById('Hint6').style.visibility = "visible"
+                    }
+                    break;
+            }
+        }
+        //Trying to test if i can put all the cases into 1 function
+        function Show_or_Hide(button, text) {
+            var Hint_btn = button;
+            var Hint_text = text;
+            if (Hint_text.match("Hide Me!")) {
+                document.getElementById(Hint_btn).innerHTML = "Show Me!";
+                document.getElementById(Hint_text).style.visibility = "hidden"
+            } else if (text.match("Show Me!")) {
+                document.getElementById(Hint_btn).innerHTML = "Hide Me!";
+                document.getElementById(Hint_text).style.visibility = "visible"
+            }
+        } //Final result, failed
+        var modal = document.getElementById("calcModal");
+
+        // Get the <span> element that closes the modal
+        var spanClosebtn = document.getElementsByClassName("close")[0];
+
+        function openModel() {
+            modal.style.display = "block";
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        spanClosebtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

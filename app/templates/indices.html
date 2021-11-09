@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Indices</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='checkBtn.js') }}"></script>
+    <script>
+        //Load quiz answers
+        var quizDict = {};
+
+        function loadAnswers(lst) { //lst = quiz list declared from routes.py
+            for (i = 0; i < lst.length; i++) {
+                quizDict[lst[i].Question] = lst[i].Answer
+            }
+        }
+
+        $(document).ready(function() {
+            //Quiz page 1
+            $("#Q1_submit").click(function(e) {
+                //indices1_1
+                var userAnswer1 = $("#indices1_1").val()
+                var actualAnswer1 = quizDict.indices1_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_1_1").show();
+                    $("#fail_1_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_1_1").show();
+                    $("#success_1_1").hide();
+                }
+                //indices1_2
+                var userAnswer2 = $("#indices1_2").val()
+                var actualAnswer2 = quizDict.indices1_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_1_2").show();
+                    $("#fail_1_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_1_2").show();
+                    $("#success_1_2").hide();
+                }
+
+                //indices1_3
+                var userAnswer3 = $("#indices1_3").val()
+                var actualAnswer3 = quizDict.indices1_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_1_3").show();
+                    $("#fail_1_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_1_3").show();
+                    $("#success_1_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 2
+            $("#Q2_submit").click(function(e) {
+                //indices2_1
+                var userAnswer1 = $("#indices2_1").val()
+                var actualAnswer1 = quizDict.indices2_1
+                if (userAnswer1 == actualAnswer1) {
+                    $("#success_2_1").show();
+                    $("#fail_2_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_2_1").show();
+                    $("#success_2_1").hide();
+                }
+                //indices2_2
+                var userAnswer2 = $("#indices2_2").val()
+                var actualAnswer2 = quizDict.indices2_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_2_2").show();
+                    $("#fail_2_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_2_2").show();
+                    $("#success_2_2").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 3
+            $("#Q3_submit").click(function(e) {
+                //indices3_1
+                var userAnswer1 = $("#indices3_1").val()
+                var actualAnswer1 = quizDict.indices3_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_3_1").show();
+                    $("#fail_3_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_3_1").show();
+                    $("#success_3_1").hide();
+                }
+                //indices3_2
+                var userAnswer2 = $("#indices3_2").val()
+                var actualAnswer2 = quizDict.indices3_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_3_2").show();
+                    $("#fail_3_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_3_2").show();
+                    $("#success_3_2").hide();
+                }
+
+                //indices3_3
+                var userAnswer3 = $("#indices3_3").val()
+                var actualAnswer3 = quizDict.indices3_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_3_3").show();
+                    $("#fail_3_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_3_3").show();
+                    $("#success_3_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 4
+            $("#Q4_submit").click(function(e) {
+                //indices4_1
+                var userAnswer1 = $("#indices4_1").val()
+                var actualAnswer1 = quizDict.indices4_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_4_1").show();
+                    $("#fail_4_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_4_1").show();
+                    $("#success_4_1").hide();
+                }
+                //indices4_2
+                var userAnswer2 = $("#indices4_2").val()
+                var actualAnswer2 = quizDict.indices4_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_4_2").show();
+                    $("#fail_4_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_4_2").show();
+                    $("#success_4_2").hide();
+                }
+
+                //indices4_3
+                var userAnswer3 = $("#indices4_3").val()
+                var actualAnswer3 = quizDict.indices4_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_4_3").show();
+                    $("#fail_4_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_4_3").show();
+                    $("#success_4_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 5
+            $("#Q5_submit").click(function(e) {
+                //indices5_1
+                var userAnswer1 = $("#indices5_1").val()
+                var actualAnswer1 = quizDict.indices5_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_5_1").show();
+                    $("#fail_5_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_5_1").show();
+                    $("#success_5_1").hide();
+                }
+                //indices5_2
+                var userAnswer2 = $("#indices5_2").val()
+                var actualAnswer2 = quizDict.indices5_2
+                var roundAnswer2 = Math.round(actualAnswer2)
+                if ((userAnswer2 == actualAnswer2) || (userAnswer2 == roundAnswer2)) {
+                    $("#success_5_2").show();
+                    $("#fail_5_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_5_2").show();
+                    $("#success_5_2").hide();
+                }
+
+                //indices5_3
+                var userAnswer3 = $("#indices5_3").val()
+                var actualAnswer3 = quizDict.indices5_3
+                var roundAnswer3 = Math.round(actualAnswer3)
+                if ((userAnswer3 == actualAnswer3) || (userAnswer3 == roundAnswer3)) {
+                    $("#success_5_3").show();
+                    $("#fail_5_3").hide();
+                } else if (userAnswer3 != actualAnswer3) {
+                    $("#fail_5_3").show();
+                    $("#success_5_3").hide();
+                }
+                e.preventDefault();
+            });
+            //Quiz page 6
+            $("#Q6_submit").click(function(e) {
+                //indices6_1
+                var userAnswer1 = $("#indices6_1").val()
+                var actualAnswer1 = quizDict.indices6_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_6_1").show();
+                    $("#fail_6_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_6_1").show();
+                    $("#success_6_1").hide();
+                }
+                //indices6_2
+                var userAnswer2 = $("#indices6_2").val()
+                var actualAnswer2 = quizDict.indices6_2
+                if (userAnswer2 == actualAnswer2) {
+                    $("#success_6_2").show();
+                    $("#fail_6_2").hide();
+                } else if (userAnswer2 != actualAnswer2) {
+                    $("#fail_6_2").show();
+                    $("#success_6_2").hide();
+                }
+
+                e.preventDefault();
+            });
+            //Quiz page 7
+            $("#Q7_submit").click(function(e) {
+                //indices6_1
+                var userAnswer1 = $("#indices7_1").val()
+                var actualAnswer1 = quizDict.indices7_1
+                var roundAnswer1 = Math.round(actualAnswer1)
+                if ((userAnswer1 == actualAnswer1) || (userAnswer1 == roundAnswer1)) {
+                    $("#success_7_1").show();
+                    $("#fail_7_1").hide();
+                } else if (userAnswer1 != actualAnswer1) {
+                    $("#fail_7_1").show();
+                    $("#success_7_1").hide();
+                }
+
+                e.preventDefault();
+            });
+        });
+    </script>
+
+</head>
+
+<body onload="loadAnswers({{quiz}})">
+
+    <div class="col-sm-2">
+
+        <ul class="sidebar">
+
+            <a href="{{ url_for('homepage') }}" style="font-size:300%;" ;>Home</a>
+
+            <h3><a href="{{ url_for('progress', username=current_user.username) }}">Your Progress</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('transposing_equations', username=current_user.username) }}">Transposing Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('indices', username=current_user.username) }}">Indices</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('simultaneous_equations', username=current_user.username) }}">Simultaneous Equations</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('geometry', username=current_user.username) }}">Geometry</a></h3>
+
+            <br>
+
+            <h3><a href="{{ url_for('test', username=current_user.username) }}">Test</a></h3>
+
+        </ul>
+    </div>
+
+
+
+
+
+    <div class="col-sm-10">
+        <div class="jumbotron text-center" style="margin-bottom:0; background-color: gray;">
+            <h1>Indices</h1>
+        </div>
+
+        <br>
+        <br>
+        <p>Indices are called powers. It can be used to express a result of a number being multiplied multiple times.</p>
+        <br>
+        <p>For example, number 5<sup>3</sup> is basically having three 5s multiplied together, i.e. 5 x 5 x 5, and it evaluates to 125.</p>
+        <br>
+        <p>In the example above, "5" is called the <b>base</b> and "3" is the <b>index</b>.</p>
+        <br>
+        <p>In this section, we will learn the <b>Law of Indices</b> for manipulating indices.</p>
+        <br>
+        <br>
+        <h4><b>Indices Rule 1:</b> 0 power of any number equals to 1.</h4>
+        <br>
+        <p><b style="color:red;">Exception:</b>In this case, the base cannot be 0, as 0<sup>0</sup> cannot be evaluated.</p>
+        <p>i.e.</p>
+        <p class="formular"> a<sup>0</sup> = 1</p>
+
+        <br>
+        <br>
+        <h4><b>Indices Rule 2:</b> If the index of base a is -m, where m is a positive number, then it can be evaluated to be the inverse of a to the power of m</h4>
+        <br>
+        <p><b style="color:red;">Exception:</b>In this case, the base cannot be 0, as we cannot have a denominator to be 0.</p>
+        <p>i.e.</p>
+        <p class="formular"> a<sup>-m</sup> = <sup>1</sup>/a<sup>m</sup></p>
+
+        <br>
+        <br>
+        <h4><b>Indices Rule 3:</b> If two numbers with the same base are multiplied together, then we simply keep the base and add up the indices</h4>
+        <br>
+        <p>i.e.</p>
+        <p class="formular"> a<sup>m</sup> x a<sup>n</sup> = a<sup>(m+n)</sup></p>
+
+        <br>
+        <br>
+        <h4><b>Indices Rule 4:</b> If two numbers with the same base are divided, then we simply keep the base and subtract the indices</h4>
+        <br>
+        <p>i.e.</p>
+        <p class="formular"> a<sup>m</sup> / a<sup>n</sup> = a<sup>(m-n)</sup></p>
+
+        <br>
+        <br>
+        <h4><b>Indices Rule 5:</b> If an index is raised to another index, then we multiply the two indices</h4>
+        <br>
+        <p>i.e.</p>
+        <p class="formular"> (a<sup>m</sup>)<sup>n</sup>= a<sup>(mxn)</sup></p>
+
+        <br>
+        <br>
+        <h4><b>Indices Rule 6:</b></h4>
+        <br>
+        <br>
+        <img src="{{url_for('static', filename='indices_example6_1.png')}}" class="equation" style="width:240px;height:70px;" alt="Rule 6">
+
+        <br>
+        <br>
+        <br>
+        <h3><b>Exercises:</b></h3>
+        <br>
+        <br>
+        <div class="quiz_box">
+
+            <div class="quiz_content">
+                <h4><b>Question 1: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form method="GET">
+                    <ol>
+                        <li>
+                            <label for="indices1_1" class="QuizText">3<sup>0</sup> &emsp;=</label>
+                            <input type="number" class="userInput" id="indices1_1" />
+                            <label id="success_1_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices1_2">100<sup>0</sup> =</label>
+                            <input type="number" id="indices1_2" name="indices1_2" />
+                            <label id="success_1_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices1_3">0<sup>0</sup> &emsp;=</label>
+                            <select id="indices1_3" name="indices1_3">
+                                <option value="default">Please select</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="math_error">Math Error</option>
+                            </select>
+                            <label id="success_1_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_1_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q1_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 2: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="indices2_1">10<sup>-2</sup> &emsp;=</label>
+                            <input type="number" id="indices2_1" name="indices2_1" />
+                            <label id="success_2_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_2_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices2_2">1<sup>-1</sup> &emsp;&ensp;=</label>
+                            <input type="number" id="indices2_2" name="indices2_2">
+                            <label id="success_2_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_2_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q2_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 3: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="indices3_1">10<sup>3</sup>&emsp;x&emsp;10<sup>2</sup> &emsp;=</label>
+                            <input type="number" id="indices3_1" name="indices3_1">
+                            <label id="success_3_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices3_2">2<sup>4</sup>&emsp;&ensp;x&emsp;2<sup>-5</sup> &emsp;&ensp;=</label>
+                            <input type="number" id="indices3_2" name="indices3_2">
+                            <label id="success_3_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices3_3">0<sup>3</sup>&emsp;&ensp;x&emsp;0<sup>2</sup> &emsp;&ensp;=</label>
+                            <select id="indices3_3" name="indices3_3">
+                                <option value="default">Please select</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="undefined">Undefined</option>
+                            </select>
+                            <label id="success_3_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_3_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q3_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 4: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="indices4_1">5<sup>4</sup>&emsp;/&emsp;5<sup>3</sup> &emsp;=</label>
+                            <input type="number" id="indices4_1" name="indices4_1">
+                            <label id="success_4_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices4_2">2<sup>8</sup>&emsp;/&emsp;2<sup>8</sup> &emsp;=</label>
+                            <input type="number" id="indices4_2" name="indices4_2">
+                            <label id="success_4_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices4_3">4<sup>2</sup>&emsp;/&emsp;2<sup>4</sup> &emsp;=</label>
+                            <input type="number" id="indices4_3" name="indices4_3">
+                            <label id="success_4_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_4_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q4_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 5: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="indices5_1">(5<sup>2</sup>)<sup>3</sup> &emsp;=</label>
+                            <input type="number" id="indices5_1" name="indices5_1">
+                            <label id="success_5_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices5_2">(8<sup>2</sup>)<sup>1</sup>/<sub>3</sub> &emsp;=</label>
+                            <input type="number" id="indices5_2" name="indices5_2">
+                            <label id="success_5_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices5_3">(100<sup>3</sup>)<sup>0</sup> =</label>
+                            <select id="indices5_3" name="indices5_3">
+                                <option value="default">Please select</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="undefined">Undefined</option>
+                            </select>
+                            <label id="success_5_3" style="display:none">✔ Correct!</label>
+                            <label id="fail_5_3" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q5_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 6: </b></h4>
+                <p>Please evaluate the following:</p>
+                <form>
+                    <ol>
+                        <li>
+                            <label for="indices6_1">8<sup>(<sup>2</sup>/<sub>3</sub>)</sup> &emsp;=</label>
+                            <input type="number" id="indices6_1" name="indices6_1">
+                            <label id="success_6_1" style="display:none">✔ Correct!</label>
+                            <label id="fail_6_1" style="display:none">✘ Wrong!</label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="indices6_2">16<sup>(<sup>-1</sup>/<sub>4</sub>)</sup> &ensp;=</label>
+                            <input type="number" id="indices6_2" name="indices6_2">
+                            <label id="success_6_2" style="display:none">✔ Correct!</label>
+                            <label id="fail_6_2" style="display:none">✘ Wrong!</label>
+                        </li>
+                    </ol>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q6_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <div class="quiz_content">
+                <h4><b>Question 7: </b></h4>
+                <p>Given the physicist Albert Einstein's Mass-Energy Relation, E = mc<sup>2</sup>, calculate c, the speed of light,</p>
+                <p>when: E = 4.5 x 10<sup>17</sup> J and m = 5kg</p>
+                <p>(Hint: Using Transposing Equation that we learned in the previous chapter to isolate term c first.)</p>
+                <br>
+                <form>
+                    <label for="indices7_1">c =</label>
+                    <input type="number" id="indices7_1" name="indices7">&emsp;<b>m/s</b>
+                    <label id="success_7_1" style="display:none">✔ Correct!</label>
+                    <label id="fail_7_1" style="display:none">✘ Wrong!</label>
+                    <br><br>
+                    <div style="text-align: center;">
+                        <input type="submit" id="Q7_submit" value="Check">
+                    </div>
+                </form>
+            </div>
+
+            <a class="prev_button" onclick="change_question(-1)">❮</a>
+            <a class="next_button" onclick="change_question(1)">❯</a>
+
+        </div>
+
+        <div class="qnum_container">
+            <span class="qnum" onclick="this_question(1)">1</span>
+            <span class="qnum" onclick="this_question(2)">2</span>
+            <span class="qnum" onclick="this_question(3)">3</span>
+            <span class="qnum" onclick="this_question(4)">4</span>
+            <span class="qnum" onclick="this_question(5)">5</span>
+            <span class="qnum" onclick="this_question(6)">6</span>
+            <span class="qnum" onclick="this_question(7)">7</span>
+        </div>
+        <script>
+            var question_no = 1;
+            to_question(question_no);
+
+            function change_question(n) {
+                to_question(question_no += n);
+            }
+
+            function this_question(n) {
+                to_question(question_no = n);
+            }
+
+            function to_question(n) {
+                var i;
+                var slides = document.getElementsByClassName("quiz_content");
+                var qnums = document.getElementsByClassName("qnum");
+                if (n > slides.length) {
+                    question_no = 1
+                }
+                if (n < 1) {
+                    question_no = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < qnums.length; i++) {
+                    qnums[i].className = qnums[i].className.replace(" active", "");
+                }
+                slides[question_no - 1].style.display = "block";
+                qnums[question_no - 1].className += " active";
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+
+
+
+
+    <!-- <div class=" jumbotron text-center " style="margin-bottom:0 ">
+  <a href="homepage.html " > </a>
+</div> -->
+
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basics Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="/static/checkBtn.js"></script>
+    <script>
+
+        var UserExamAnswer = {};
+        $(document).ready(function(){
+            
+            $("#Q1_submit").click(function(e){                
+                if (!$('#Q1_input').val()) {
+                    alert('Fill in your answer!');
+                }
+                else {
+                    var userAnswer1 = $("#Q1_input").val()
+                    UserExamAnswer[quiz[0].Question_No] = userAnswer1
+                    alert(userAnswer1);
+                    document.getElementById("Q1demo").innerHTML = userAnswer1
+                }
+                e.preventDefault();
+            });
+
+            $("#Q2_submit").click(function(e){                
+                if (!$('#Q2_input').val()) {
+                    alert('Fill in your answer!');
+                }
+                else {
+                    var userAnswer2 = $("#Q2_input").val()
+                    UserExamAnswer[quiz[1].Question_No] = userAnswer2
+
+                    document.getElementById("Q2demo").innerHTML = userAnswer2
+                }
+                e.preventDefault();
+            });
+            
+        });
+    </script>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        h2 {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--Script-->
+    <script>
+
+        // Set the date we're counting down to
+
+
+        //current date   
+        // count down 30 mins     
+        var count = 1000 * 60 * 60;
+        var countDownDate = new Date().getTime() + count;
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("timer").innerHTML = minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("timer").innerHTML = "Times up";
+                window.location.replace("{{ url_for('test_result', username=current_user.username) }}");
+            }
+        }, 1000);
+
+
+        i
+    </script>
+
+
+
+
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <b><h1>Basics Test</h1></b>
+        <div>
+            <p>Time remaining</p>
+        </div>
+        <div id="timer"></div>
+    </div>
+
+    <br>
+
+    <br>
+
+
+
+    <div class="quiz_box">
+
+        <div class="quiz_content">
+            <h2><b>Question 1: </b></h2>
+            <form>
+                <img src="{{quiz[0].Question}}">
+                <h3>{{quiz[0].QuestionText}}</h3>
+                <input type="text" class="userInput" id="Q1_input" value=""/> 
+                <p id="Q1demo"></p>
+                <br><br>
+                <div style="text-align: center;">
+                <!-- <form action="{{ url_for('test_active', username=current_user.username) }}" method="get">
+                    <input type="hidden" name="test_id" value="{{test_id}}"> 
+                
+                -->
+                <form onsubmit="return false">
+                    <input type="submit" id="Q1_submit" value="Save answer">
+                </form>
+                </div>
+            </form>
+        </div>
+
+        <div class="quiz_content">
+            <h2><b>Question 2: </b></h2>
+            <form>
+                <img src="{{quiz[1].Question}}">
+                <h3>{{quiz[1].QuestionText}}</h3>
+                <input type="text" id="transposing2_1" name="transposing2_1">
+                <p id="Q2demo"></p>
+
+                <br><br>
+                <div style="text-align: center;">
+                    <!-- <form action="{{ url_for('test_active', username=current_user.username) }}" method="get">
+                        <input type="hidden" name="test_id" value="{{test_id}}"> -->
+                        <input type="submit" id="Q2_submit" value="Save answer">
+                    <!-- </form> -->
+                </div>
+            </form>
+        </div>
+
+        <div class="quiz_content">
+            <h2><b>Question 3: </b></h2>
+            <form>
+                <img src="{{quiz[2].Question}}">
+                <h3>{{quiz[2].QuestionText}}</h3>
+                <input type="text" id="transposing3_1" name="transposing3_1">
+
+                <br><br>
+                <div style="text-align: center;">
+                    <!-- <form action="{{ url_for('test_active', username=current_user.username) }}" method="get">
+                        <input type="hidden" name="test_id" value="{{test_id}}"> -->
+                        <input type="submit" id="Q3_submit" value="Save answer">
+                    <!-- </form> -->
+                </div>
+            </form>
+        </div>
+
+        <div class="quiz_content">
+            <h2><b>Question 4: </b></h2>
+            <form>
+                <img src="{{quiz[3].Question}}">
+                <h3>{{quiz[3].QuestionText}}</h3> 
+                <input type="text" id="transposing4_1" name="transposing4_1">
+
+
+                <div style="text-align: center;">
+                    <!-- <form action="{{ url_for('test_active', username=current_user.username) }}" method="get">
+                        <input type="hidden" name="test_id" value="{{test_id}}"> -->
+                        <input type="submit" id="Q4_submit" value="Save answer">
+                    <!-- </form> -->
+                </div>
+            </form>
+        </div>
+
+        <div class="quiz_content">
+            <h4><b>Question 5: </b></h4>
+            <form>
+                <img src="{{quiz[4].Question}}">
+                <h3>{{quiz[4].QuestionText}}</h3> 
+                <input type="text" id="transposing5_2" name="transposing5_2">
+                <div style="text-align: center;">
+                    <!-- <form action="{{ url_for('test_active', username=current_user.username) }}" method="get">
+                        <input type="hidden" name="test_id" value="{{test_id}}"> -->
+                        <input type="submit" id="Q5_submit" value="Save answer">
+                    <!-- </form> -->
+                </div>
+            </form>
+        </div>
+
+
+
+        <a class="prev_button" onclick="change_question(-1)">❮</a>
+        <a class="next_button" onclick="change_question(1)">❯</a>
+
+    </div>
+
+    <div class="qnum_container">
+        <span class="qnum" onclick="this_question(1)">1</span>
+        <span class="qnum" onclick="this_question(2)">2</span>
+        <span class="qnum" onclick="this_question(3)">3</span>
+        <span class="qnum" onclick="this_question(4)">4</span>
+        <span class="qnum" onclick="this_question(5)">5</span>
+
+    </div>
+    <script>
+        var question_no = 1;
+        to_question(question_no);
+
+        function change_question(n) {
+            to_question(question_no += n);
+        }
+
+        function this_question(n) {
+            to_question(question_no = n);
+        }
+
+        function to_question(n) {
+            var i;
+            var slides = document.getElementsByClassName("quiz_content");
+            var qnums = document.getElementsByClassName("qnum");
+            if (n > slides.length) {
+                question_no = 1
+            }
+            if (n < 1) {
+                question_no = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < qnums.length; i++) {
+                qnums[i].className = qnums[i].className.replace(" active", "");
+            }
+            slides[question_no - 1].style.display = "block";
+            qnums[question_no - 1].className += " active";
+        }
+    </script>
+
+
+
+
+</html>
